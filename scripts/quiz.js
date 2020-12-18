@@ -7,6 +7,14 @@ const headElem = document.getElementById("head");
 const buttonsElem = document.getElementById("buttons");
 const pagesElem = document.getElementById("pages");
 
+const quizPopup = document.querySelector('.quiz')
+
+function openQuiz() {
+	quizPopup.classList.add('quiz_opened');
+}
+
+
+
 //Массив с результатами
 const results = 
 [

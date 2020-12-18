@@ -160,7 +160,6 @@
 
 }
 
-
 .popup__container {
   border: 1px solid rgba(0, 0, 0, 0.47);
   box-sizing: border-box;
@@ -208,17 +207,6 @@
   justify-content: space-between;
 
 }
-
-.popup__input_poem-text {
-  background: #d7e0e6; /* Цвет фона */
-  border: 2px solid #5ea8be; /* Параметры рамки */
-  padding: 10px; /* Поля */
-  width: 100%; /* Ширина */
-  height: 200px; /* Высота */
-  box-sizing: border-box; /* Алгоритм расчёта ширины */
-  font-size: 14px; /* Размер шрифта */
-  }
-
 
 /* .popup__field_autoField {
   display: block;

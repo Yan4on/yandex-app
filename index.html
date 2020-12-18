@@ -6,6 +6,8 @@
     <title>Гражданин-поэт 2025</title>
     <meta name="description" content="Хакатон «2025: Гражданин-поэт»" />
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./style/quiz.css" /> 
+
   </head>
 
   <body>
@@ -181,7 +183,6 @@
             <fieldset class="popup__field popup_field_autoField">
               <input id="#" type="text" placeholder="Категория" class="popup__input popup__input_category" name="popupCategory" minlength="2" maxlength="30" required>
               <input id="№" type="text" placeholder="Стих" class="popup__input popup__input_poem" name="popupPoem" required>
-              <p><textarea class="popup__input popup__input_poem-text" cols='5' name="poem-text"></textarea></p>
             </fieldset>
             <button class="popup__submit-btn" type="submit">Отправить</button>
           </form>
@@ -189,9 +190,30 @@
         </div>
       </section>
     </div>
-    <div class="wrapper">
-        <iframe src="quiz.html" width="480" height="650" class="quiz-frame"></iframe>
-    </div>
+
+    <section class="quiz quiz_opened">
+        <div class="quiz__container">
+            <div class="quiz__head">
+                <div class="head__content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она завоет, То заплачет, как дитя...</div>
+            </div>
+            <div class="quiz__body">
+                <div class="buttons">
+                    <div class="buttons__content" id="buttons">
+                        <button class="button">Default button</button><br>
+                        <button class="button button_wrong">Wrong answer</button><br>
+                        <button class="button button_correct">Correct answer</button><br>
+                        <button class="button button_passive">Unclicked button</button><br>
+                    </div>
+                </div>
+
+                <div class="quiz__footer">
+                    <div class="footer__content" id="pages">0 / 0</div>
+                </div>
+            </div>
+            
+        </main>
+    </section>
+
     <!-- <template id="card">
       <article class="element">
         <img  class="element__pic" src="#" alt="#">
@@ -203,5 +225,5 @@
       </article>
     </template> -->
   </body>
-  <script type="module" src="scripts/app.js"></script>
+  <script type="module" src="scripts/quiz.js"></script>
 </html>

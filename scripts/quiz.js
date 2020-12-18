@@ -3,17 +3,31 @@ import Question from '../components/Question.js'
 import Answer from '../components/Answer.js'
 import Result from '../components/Result.js'
 
+
 const headElem = document.getElementById("head");
 const buttonsElem = document.getElementById("buttons");
 const pagesElem = document.getElementById("pages");
 
-const quizPopup = document.querySelector('.quiz')
+const quizPopup = document.querySelector('.popup__quiz')
+const buttonTestQuiz = document.querySelector('.quiz__button_test')
 
 function openQuiz() {
-	quizPopup.classList.add('quiz_opened');
+	quizPopup.classList.add('popup__quiz_opened');
 }
 
+function closeQuiz() {
+	quizPopup.classList.remove('popup__quiz_opened');
+  }
 
+buttonTestQuiz.addEventListener('click', openQuiz);
+
+function handlePopupClick(evt) {
+	if (evt.target.classList.contains('popup')) {
+		closeQuiz();
+	}
+  }
+ 
+quizPopup.addEventListener('mousedown', handlePopupClick);
 
 //Массив с результатами
 const results = 

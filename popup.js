@@ -3,7 +3,7 @@ const content = document.querySelector('.content');
 const subcategoryList = content.querySelectorAll('.card__menu-item');
 
 const popupWithForm = document.querySelector('.popup');
-const popupCloseBtn = popupWithForm.querySelector('.popup__close');
+const popupCloseBtn = document.querySelector('.popup__close');
 
 
 

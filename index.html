@@ -174,19 +174,18 @@
         <div class="popup__container">
           <h3 class="popup__title">Заполните форму</h3>
           <form class="popup__form" name="popupFormCard" novalidate>
-            <fieldset class="popup__field popup__field_userData">
-              <input id="#" type="text" placeholder="Фамилия" class="popup__input popup__input_surname" name="popupSurname" minlength="2" maxlength="30" required>
-              <input id="№" type="text" placeholder="Имя" class="popup__input popup__input_name" name="popupName" required>
-            </fieldset>
-            <fieldset class="popup__field popup_field_autoField">
-              <input id="#" type="text" placeholder="Категория" class="popup__input popup__input_category" name="popupCategory" minlength="2" maxlength="30" required>
-              <input id="№" type="text" placeholder="Стих" class="popup__input popup__input_poem" name="popupPoem" required>
-            </fieldset>
-            <button class="popup__submit-btn" type="submit">Отправить</button>
+            <input id="#" type="text" placeholder="Фамилия" class="popup__input popup__input_surname" name="popupSurname" minlength="2" maxlength="30" required>
+            <input id="#" type="text" placeholder="Имя" class="popup__input popup__input_name" name="popupName" required>
+            <input id="#" type="email" placeholder="e-mail" class="popup__input popup__input_email" name="popupEmail" required>
+            <input id="#" type="tel" placeholder="Tелефон" class="popup__input popup__input_tel" name="popupTel" required>
+            <input id="#" type="text" placeholder="Категория" class="popup__input popup__input_category" name="popupCategory" minlength="2" maxlength="30" required>
+            <button class="popup__submit-btn" type="submit">Создать заявку</button>
           </form>
           <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
         </div>
       </section>
+
+      <section class="application"></section>
 
     </div>
 
@@ -200,5 +199,6 @@
         </div>
       </article>
     </template> -->
+    <script src="popup.js"></script>
   </body>
 </html>

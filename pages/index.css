@@ -8,11 +8,11 @@
   max-width: 1440px;
   min-width: 320px;
   min-height: 100vh;
+  margin: auto;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 .page__max {
   max-width: 1100px;
@@ -208,6 +208,17 @@
   justify-content: space-between;
 
 }
+
+.popup__input_poem-text {
+  background: #d7e0e6; /* Цвет фона */
+  border: 2px solid #5ea8be; /* Параметры рамки */
+  padding: 10px; /* Поля */
+  width: 100%; /* Ширина */
+  height: 200px; /* Высота */
+  box-sizing: border-box; /* Алгоритм расчёта ширины */
+  font-size: 14px; /* Размер шрифта */
+  }
+
 
 /* .popup__field_autoField {
   display: block;

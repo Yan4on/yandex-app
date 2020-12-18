@@ -6,6 +6,8 @@
     <title>Гражданин-поэт 2025</title>
     <meta name="description" content="Хакатон «2025: Гражданин-поэт»" />
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./style/quiz.css" /> 
+
   </head>
 
   <body>
@@ -30,6 +32,7 @@
       </header>
 
       <main class="content">
+        <button class="quiz__button_test">Тестовая кнопка капчи</button>
         <section class="services page__max">
           <div class="card">
             <img src="./images/med.png" alt="Медицинские услуги" class="card__pic"/>
@@ -189,6 +192,29 @@
 
     </div>
 
+    <section class="popup popup__quiz">
+        <div class="quiz__container">
+            <div class="quiz__head">
+                <div class="head__content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она завоет, То заплачет, как дитя...</div>
+            </div>
+            <div class="quiz__body">
+                <div class="buttons">
+                    <div class="buttons__content" id="buttons">
+                        <button class="button">Default button</button><br>
+                        <button class="button button_wrong">Wrong answer</button><br>
+                        <button class="button button_correct">Correct answer</button><br>
+                        <button class="button button_passive">Unclicked button</button><br>
+                    </div>
+                </div>
+
+                <div class="quiz__footer">
+                    <div class="footer__content" id="pages">0 / 0</div>
+                </div>
+            </div>
+            
+        </main>
+    </section>
+
     <!-- <template id="card">
       <article class="element">
         <img  class="element__pic" src="#" alt="#">
@@ -199,6 +225,7 @@
         </div>
       </article>
     </template> -->
-    <script src="popup.js"></script>
+    <script type="module" src="scripts/quiz.js"></script>
+    <script type='module' src="popup.js"></script>
   </body>
 </html>

@@ -1,5 +1,9 @@
 @import url(../vendor/normalize.css);
 
+.quiz__test {
+  max-width: 100%;
+}
+
 
 .page {
   background: #fff;
@@ -154,7 +158,7 @@
 
 .popup {
   margin: 0 auto;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 

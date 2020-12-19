@@ -48,13 +48,13 @@
 }
 
 .header__menu{
-  min-width: 50%;
+  min-width: 30%;
 }
 
 .header__menu-list {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -125,6 +125,10 @@
 
 .news {
   padding: 50px 0;
+  width: 100%;
+}
+
+.news__grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
@@ -263,4 +267,55 @@
   width: 50px;
   height: 50px;
   transition: opacity .3s ease-in;
+}
+
+/* .popup_type_blank {
+  visibility: visible;
+  opacity: 1;
+} */
+
+.popup__container_type_message {
+  width: 600px;
+  height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.popup__content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: 70%;
+}
+
+.popup__send-btn {
+  width: 250px;
+  height: 50px;
+  background-color: #4844FD;
+  color:#fff;
+  font-size: 26px;
+  line-height: 28px;
+}
+
+.popup__category {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 10px;
+}
+
+.popup__title_type_message {
+  margin: 20px 0 10px;
 }

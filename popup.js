@@ -29,6 +29,7 @@ function handlePopupClick(evt) {
   }
 }
 
+/*
 // функция заполнения бланка
 function fillBlank({
   popupSurname,
@@ -42,6 +43,7 @@ function fillBlank({
   popupWithBlank.querySelector('.popup__tel').textContent = `тел.: ${popupTel}`;
   popupWithBlank.querySelector('.popup__category').textContent = `Вид услуги: ${popupCategory}`;
 }
+*/
 
 
 

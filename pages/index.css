@@ -153,7 +153,6 @@
 
 .news-card__title {
   margin: 0 20px 0 0;
-
 }
 
 .news-card__like {
@@ -168,6 +167,11 @@
   min-height: 26px;
   object-fit: cover;
 }
+
+.news-card__like_active {
+  background-image: url(../images/like-black.svg);
+}
+
 
 .news-card__pic {
   width: 100%;

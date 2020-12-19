@@ -1,6 +1,5 @@
 
-const content = document.querySelector('.content');
-const subcategoryList = content.querySelectorAll('.card__menu-item');
+import { subcategoryList } from './utils/constants.js';
 
 const popupWithForm = document.querySelector('.popup_type_form');
 const popupForm =popupWithForm.querySelector('.popup__form');
@@ -26,6 +25,7 @@ function handlePopupClick(evt) {
     closePopup();
   }
 }
+
 
 // функция заполнения бланка
 function fillBlank({

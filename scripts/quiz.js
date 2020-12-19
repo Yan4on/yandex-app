@@ -25,12 +25,12 @@ function handlePopupClick(evt) {
 	if (evt.target.classList.contains('popup')) {
 		closeQuiz();
 	}
-  }
- 
+}
+
 quizPopup.addEventListener('mousedown', handlePopupClick);
 
 //Массив с результатами
-const results = 
+const results =
 [
 	new Result("Тест не пройден", 0),
 	new Result("Тест не пройден", 2),
@@ -39,12 +39,12 @@ const results =
 ];
 
 //Массив с вопросами
-const questions = 
+const questions =
 [
 	new Question(`Буря мглою небо кроет,
 	Вихри снежные крутя.
 	То, как зверь, она завоет,
-	То заплачет, как дитя...`, 
+	То заплачет, как дитя...`,
 	[
 		new Answer("Тютчев Ф.И", 0),
 		new Answer("Lana del rey", 0),
@@ -55,7 +55,7 @@ const questions =
 	new Question(`Люблю грозу в начале мая,
 	Когда весенний, первый гром,
 	как бы резвяся и играя,
-	Грохочет в небе голубом...`, 
+	Грохочет в небе голубом...`,
 	[
 		new Answer("Лермонтов М.Ю", 0),
 		new Answer("Пушкин А.С", 0),
@@ -66,7 +66,7 @@ const questions =
 	new Question(`Белеет парус одинокой
 	В тумане моря голубом!..
 	Что ищет он в стране далекой?
-	Что кинул он в краю родном?..`, 
+	Что кинул он в краю родном?..`,
 	[
 		new Answer("Ксения Собчак", 0),
 		new Answer("Тютчев Ф.И", 0),
@@ -77,7 +77,7 @@ const questions =
 	new Question(`Белая берёза
 	Под моим окном
 	Принакрылась снегом,
-	Точно серебром...`, 
+	Точно серебром...`,
 	[
 		new Answer("Тютчев Ф.И", 0),
 		new Answer("Есенин С.А", 1),
@@ -88,7 +88,7 @@ const questions =
 	new Question(`Ночь, улица, фонарь, аптека,
 	Бессмысленный и тусклый свет.
 	Живи еще хоть четверть века —
-	Все будет так. Исхода нет...`, 
+	Все будет так. Исхода нет...`,
 	[
 		new Answer("Скриптонит", 0),
 		new Answer("Тютчев Ф.И", 0),
@@ -96,9 +96,9 @@ const questions =
 		new Answer("Блок А.А", 1)
 	]),
 
-	new Question(`Я достаю из широких штанин 
-	дубликатом бесценного груза. Читайте, завидуйте, 
-	я — гражданин Советского Союза. `, 
+	new Question(`Я достаю из широких штанин
+	дубликатом бесценного груза. Читайте, завидуйте,
+	я — гражданин Советского Союза. `,
 	[
 		new Answer("ЭлДжей", 0),
 		new Answer("Emenem", 0),
@@ -116,7 +116,7 @@ Update();
 function Update()
 {
 	//Проверяем, есть ли ещё вопросы
-	if(quiz.current < quiz.questions.length) 
+	if(quiz.current < quiz.questions.length)
 	{
 		//Если есть, меняем вопрос в заголовке
 		headElem.innerHTML = quiz.questions[quiz.current].text;
@@ -136,7 +136,7 @@ function Update()
 
 			buttonsElem.appendChild(btn);
 		}
-		
+
 		//Выводим номер текущего вопроса
 		pagesElem.innerHTML = (quiz.current + 1) + " / " + quiz.questions.length;
 
@@ -165,7 +165,7 @@ function Init()
 	}
 }
 
-function Click(index) 
+function Click(index)
 {
 	//Получаем номер правильного ответа
 	let correct = quiz.Click(index);
@@ -187,10 +187,10 @@ function Click(index)
 			btns[correct].className = "button button_correct";
 		}
 
-		if(index != correct) 
+		if(index != correct)
 		{
 			btns[index].className = "button button_wrong";
-		} 
+		}
 	}
 	else
 	{

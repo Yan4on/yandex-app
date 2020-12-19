@@ -1,5 +1,5 @@
 
-import { subcategoryList } from './utils/constants.js';
+import { subcategoryList, poems } from './utils/constants.js';
 
 const popupWithForm = document.querySelector('.popup_type_form');
 const popupForm =popupWithForm.querySelector('.popup__form');
@@ -34,11 +34,13 @@ function fillBlank({
   popupEmail,
   popupTel,
   popupCategory
- }) {
+ }, dataPoems) {
   popupWithBlank.querySelector('.popup__name').textContent = `${popupSurname} ${popupName}`;
   popupWithBlank.querySelector('.popup__email').textContent = `e-mail: ${popupEmail}`;
   popupWithBlank.querySelector('.popup__tel').textContent = `тел.: ${popupTel}`;
   popupWithBlank.querySelector('.popup__category').textContent = `Вид услуги: ${popupCategory}`;
+  popupWithBlank.querySelector('.popup__text').innerHTML = dataPoems[popupCategory];
+
 }
 
 
@@ -50,7 +52,7 @@ function handlePopupSubmit(evt) {
     formValues[input.name] = input.value;
   });
 
-  fillBlank(formValues);
+  fillBlank(formValues, poems);
 
   closePopup(popupWithForm);
   openPopup(popupWithBlank);

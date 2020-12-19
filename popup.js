@@ -1,6 +1,8 @@
+import { subcategoryList, poems } from './utils/constants.js';
 
 const content = document.querySelector('.content');
-const subcategoryList = content.querySelectorAll('.card__menu-item');
+//const subcategoryList = content.querySelectorAll('.card__menu-item');
+
 
 const popupWithForm = document.querySelector('.popup_type_form');
 const popupForm =popupWithForm.querySelector('.popup__form');
@@ -42,6 +44,23 @@ function fillBlank({
 }
 
 
+
+// функция заполнения бланка
+function fillBlank({
+  popupSurname,
+  popupName,
+  popupEmail,
+  popupTel,
+  popupCategory
+ }, dataPoems) {
+  popupWithBlank.querySelector('.popup__name').textContent = `${popupSurname} ${popupName}`;
+  popupWithBlank.querySelector('.popup__email').textContent = `e-mail: ${popupEmail}`;
+  popupWithBlank.querySelector('.popup__tel').textContent = `тел.: ${popupTel}`;
+  popupWithBlank.querySelector('.popup__category').textContent = `Вид услуги: ${popupCategory}`;
+  popupWithBlank.querySelector('.popup__text').innerHTML = dataPoems[popupCategory];
+
+}
+
 function handlePopupSubmit(evt) {
   evt.preventDefault();
   const formValues = {};
@@ -50,7 +69,9 @@ function handlePopupSubmit(evt) {
     formValues[input.name] = input.value;
   });
 
-  fillBlank(formValues);
+
+  fillBlank(formValues, poems);
+
 
   closePopup(popupWithForm);
   openPopup(popupWithBlank);
@@ -77,6 +98,7 @@ document.querySelectorAll('.popup__close').forEach(element =>{
 popupWithForm.addEventListener('mousedown', handlePopupClick);
 
 popupForm.addEventListener("submit", handlePopupSubmit);
+
 
 popupSendBlank.addEventListener("click", () => {
   closePopup(popupWithBlank);

@@ -8,6 +8,7 @@
     <meta name="description" content="Хакатон «2025: Гражданин-поэт»" />
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="stylesheet" href="./style/quiz.css" />
+    <link rel="stylesheet" href="./style/slider.css" />
 
 </head>
 
@@ -104,70 +105,139 @@
 
             <section class="news page__max">
                 <h2 class="news__title" id="news">Новости</h2>
-                <div class="news__grid">
-                    <article class="news-card">
-                        <img class="news-card__pic" src="./images/mask.jpg" alt="Маска медицинская" />
-                        <div class="news-card__header">
-                            <h3 class="news-card__title">Начата вакцинация населения от COVID</h3>
-                            <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+                <!-- <div class="news__grid"> 
+
+
+          <article class="news-card">
+            <img class="news-card__pic" src="./images/mask.jpg" alt="Маска медицинская" />
+            <div class="news-card__header">
+              <h3 class="news-card__title">Начата вакцинация населения от COVID</h3>
+              <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+            </div>
+            <div class="news-card__desc">
+              <p class="news-card__poem">
+                Убытки терпит целая страна,<br>
+                Но вера есть, все зиждется на вере, -<br>
+                Объявлена смертельная война<br>
+                Одной несчастной, бедненькой холере.
+              </p>
+              <p class="news-card__poem">
+                На трудовую вахту встал народ<br>
+                В честь битвы с новоявленною порчей, -<br>
+                Но пасаран, холера не пройдет,<br>
+                Холере - нет, и все, и бал окончен!
+              </p>
+            </div>
+          </article>
+          <article class="news-card">
+            <img class="news-card__pic" src="./images/pic.jpg" alt="Маска медицинская" />
+            <div class="news-card__header">
+              <h3 class="news-card__title">Смонтирован новый водосток на ул.Веры 15</h3>
+              <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+            </div>
+            <div class="news-card__desc">
+              <p class="news-card__poem">
+                Я сразу смазал карту будня,<br>
+                плеснувши краску из стакана;<br>
+                я показал на блюде студня<br>
+                косые скулы океана.<br>
+                На чешуе жестяной рыбы<br>
+                прочёл я зовы новых губ.<br>
+                А вы<br>
+                ноктюрн сыграть<br>
+                могли бы<br>
+                на флейте водосточных труб?
+              </p>
+            </div>
+          </article>
+          <article class="news-card">
+            <img class="news-card__pic" src="./images/pic-one.jpg" alt="Маска медицинская" />
+            <div class="news-card__header">
+              <h3 class="news-card__title">Восстановлено транспортное сообщение после синейшего снегопада</h3>
+              <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+            </div>
+            <div class="news-card__desc">
+              <p class="news-card__poem">
+                Опять он падает, чудесно молчаливый,<br>
+                Легко колеблется и опускается...<br>
+                Как сердцу сладостен полет его счастливый!<br>
+                Несуществующий, он вновь рождается...<br>
+              </p>
+              <p class="news-card__poem">
+                Пускай уйдет опять - но не страшна утрата.<br>
+                Мне радостен его отход таинственный.<br>
+                Я вечно буду ждать его безмолвного возврата,<br>
+                Тебя, о ласковый, тебя, единственный.<br>
+              </p>
+            </div>
+          </article>
+        </div> -->
+
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
+                            <div class="slider__text-like">
+                                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
+                                <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+                            </div>
+                            <div class="slider__news-box">
+                                <p class="slider__news">
+                                    Убытки терпит целая страна,<br>
+                                    Но вера есть, все зиждется на вере, -<br>
+                                    Объявлена смертельная война<br>
+                                    Одной несчастной, бедненькой холере.
+                                </p>
+                            </div>
                         </div>
-                        <div class="news-card__desc">
-                            <p class="news-card__poem">
-                                Убытки терпит целая страна,<br>
-                                Но вера есть, все зиждется на вере, -<br>
-                                Объявлена смертельная война<br>
-                                Одной несчастной, бедненькой холере.
-                            </p>
-                            <p class="news-card__poem">
-                                На трудовую вахту встал народ<br>
-                                В честь битвы с новоявленною порчей, -<br>
-                                Но пасаран, холера не пройдет,<br>
-                                Холере - нет, и все, и бал окончен!
-                            </p>
+                        <div class="slider__item">
+                            <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
+                            <div class="slider__text-like">
+                                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
+                                <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+                            </div>
+                            <div class="slider__news-box">
+                                <p class="slider__news">
+                                    Убытки терпит целая страна,<br>
+                                    Но вера есть, все зиждется на вере, -<br>
+                                    Объявлена смертельная война<br>
+                                    Одной несчастной, бедненькой холере.
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                    <article class="news-card">
-                        <img class="news-card__pic" src="./images/pic.jpg" alt="Маска медицинская" />
-                        <div class="news-card__header">
-                            <h3 class="news-card__title">Смонтирован новый водосток на ул.Веры 15</h3>
-                            <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+                        <div class="slider__item">
+                            <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
+                            <div class="slider__text-like">
+                                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
+                                <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+                            </div>
+                            <div class="slider__news-box">
+                                <p class="slider__news">
+                                    Убытки терпит целая страна,<br>
+                                    Но вера есть, все зиждется на вере, -<br>
+                                    Объявлена смертельная война<br>
+                                    Одной несчастной, бедненькой холере.
+                                </p>
+                            </div>
                         </div>
-                        <div class="news-card__desc">
-                            <p class="news-card__poem">
-                                Я сразу смазал карту будня,<br>
-                                плеснувши краску из стакана;<br>
-                                я показал на блюде студня<br>
-                                косые скулы океана.<br>
-                                На чешуе жестяной рыбы<br>
-                                прочёл я зовы новых губ.<br>
-                                А вы<br>
-                                ноктюрн сыграть<br>
-                                могли бы<br>
-                                на флейте водосточных труб?
-                            </p>
+                        <div class="slider__item">
+                            <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
+                            <div class="slider__text-like">
+                                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
+                                <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
+                            </div>
+                            <div class="slider__news-box">
+                                <p class="slider__news">
+                                    Убытки терпит целая страна,<br>
+                                    Но вера есть, все зиждется на вере, -<br>
+                                    Объявлена смертельная война<br>
+                                    Одной несчастной, бедненькой холере.
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                    <article class="news-card">
-                        <img class="news-card__pic" src="./images/pic-one.jpg" alt="Маска медицинская" />
-                        <div class="news-card__header">
-                            <h3 class="news-card__title">Восстановлено транспортное сообщение после синейшего снегопада</h3>
-                            <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
-                        </div>
-                        <div class="news-card__desc">
-                            <p class="news-card__poem">
-                                Опять он падает, чудесно молчаливый,<br>
-                                Легко колеблется и опускается...<br>
-                                Как сердцу сладостен полет его счастливый!<br>
-                                Несуществующий, он вновь рождается...<br>
-                            </p>
-                            <p class="news-card__poem">
-                                Пускай уйдет опять - но не страшна утрата.<br>
-                                Мне радостен его отход таинственный.<br>
-                                Я вечно буду ждать его безмолвного возврата,<br>
-                                Тебя, о ласковый, тебя, единственный.<br>
-                            </p>
-                        </div>
-                    </article>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#" role="button"></a>
+                    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
                 </div>
 
             </section>
@@ -178,12 +248,18 @@
             <div class="popup__container">
                 <p class="popup__info-text">
                     Приветствуем Вас на портале "Активный Гражданин 2025"
-                    Проект призван помочь гражданам обратиться в гос.учереждения по средствам 
+                    Проект призван помочь гражданам обратиться в гос.учереждения по средствам
                     заполнения универсальной формы,
-                    после заполнения которой, Ваше ображение будет заполнено в стихотворной форме, что является обязательным требованием РФ в 2025 году.
-                    Вам необходимо выбрать категорию(сейчас доступна "МЕДИЦИНА" и подкатегорию), после этого Вы должны пройти проверку на человечность(капча) и правильно
+                    после заполнения которой, Ваше ображение будет заполнено в стихотворной форме, что является
+                    обязательным
+                    требованием РФ в 2025 году.
+                    Вам необходимо выбрать категорию(сейчас доступна "МЕДИЦИНА" и подкатегорию), после этого Вы должны
+                    пройти
+                    проверку на человечность(капча) и правильно
                     ответить на вопрос.
-                    После прохождения теста, вы получите заполненую форму для отправки в соответствующую инстанцию.(сейчас никуда не уходит,ничего с ней сделать нельзя)
+                    После прохождения теста, вы получите заполненую форму для отправки в соответствующую
+                    инстанцию.(сейчас никуда
+                    не уходит,ничего с ней сделать нельзя)
                 </p>
                 <button class="popup__info-button popup__close"></button>
             </div>
@@ -192,12 +268,34 @@
         <section class="popup popup_type_form">
             <div class="popup__container">
                 <h3 class="popup__title">Заполните форму</h3>
-                <form class="popup__form" name="popupFormCard" novalidate>
-                    <input id="#" type="text" placeholder="Фамилия" class="popup__input popup__input_surname" name="popupSurname" minlength="2" maxlength="30" required autofocus>
-                    <input id="#" type="text" placeholder="Имя" class="popup__input popup__input_name" name="popupName" required>
-                    <input id="#" type="email" placeholder="e-mail" class="popup__input popup__input_email" name="popupEmail" required>
-                    <input id="#" type="tel" placeholder="Tелефон" class="popup__input popup__input_tel" name="popupTel" required>
-                    <input id="category" type="text" placeholder="Категория" class="popup__input popup__input_category" name="popupCategory" minlength="2" maxlength="50" required readonly>
+                <form class="popup__form" name="popupFormCard">
+                    <div class="popup__grid">
+                        <input id="surname" type="text" placeholder="Фамилия" class="popup__input popup__input_surname"
+                            name="popupSurname" minlength="2" maxlength="30" required autofocus>
+                        <span id="surname-error" class="popup__input-error"></span>
+                    </div>
+                    <div class="popup__grid">
+                        <input id="name" type="text" placeholder="Имя" class="popup__input popup__input_name"
+                            name="popupName" required minlength="2" maxlength="30">
+                        <span id="name-error" class="popup__input-error"></span>
+                    </div>
+                    <div class="popup__grid">
+                        <input id="mail" type="email" placeholder="e-mail" class="popup__input popup__input_email"
+                            name="popupEmail" required>
+                        <span id="mail-error" class="popup__input-error"></span>
+                    </div>
+                    <div class="popup__grid">
+                        <input id="tel" type="tel" placeholder="Tелефон" class="popup__input popup__input_tel"
+                            name="popupTel" required
+                            pattern="(\+7|8)((\s\(\d{3}\)\s)|(\(\d{3}\))|(\s|-)?\d{3}(\s|-)?)\d{3}-?\d{2}-?\d{2}">
+                        <span id="tel-error" class="popup__input-error"></span>
+                    </div>
+                    <div class="popup__grid popup__grid_type_category">
+                        <input id="category" type="text" placeholder="Категория"
+                            class="popup__input popup__input_category" name="popupCategory" minlength="2" maxlength="50"
+                            required readonly>
+                        <span id="category-error" class="popup__input-error"></span>
+                    </div>
                     <button class="popup__submit-btn" type="submit">Создать заявку</button>
                 </form>
                 <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
@@ -228,7 +326,8 @@
             <div class="quiz__container">
                 <div class="quiz__head">
                     <h3 class="">Ответьте верно, что-бы продолжить</h3>
-                    <div class="head__content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она завоет, То
+                    <div class="head__content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она
+                        завоет, То
                         заплачет, как дитя...</div>
                 </div>
                 <div class="quiz__body">
@@ -250,18 +349,8 @@
     </div>
 
 
-
-    <!-- <template id="card">
-      <article class="element">
-        <img  class="element__pic" src="#" alt="#">
-        <button class="element__trash" type="button" aria-label="Удалить карточку"></button>
-        <div class="element__desc">
-          <h2 class="element__title"></h2>
-          <button class="element__like" type="button" aria-label="Лайкнуть"></button>
-        </div>
-      </article>
-    </template> -->
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="components/slider.js"></script>
 </body>
 
 </html>

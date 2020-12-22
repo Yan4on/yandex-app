@@ -1,6 +1,7 @@
 import FormValidator from '../components/FormValidator.js';
 
 
+
 // ---ДАННЫЕ ---
 const content = document.querySelector(".content");
 const subcategoryList = content.querySelectorAll(".card__menu-item");
@@ -27,7 +28,6 @@ const validationObject = {
 };
 
 
-
 const headElem = document.getElementById("head");
 const buttonsElem = document.getElementById("buttons");
 const pagesElem = document.getElementById("pages");
@@ -40,8 +40,6 @@ const buttonTestQuiz = document.querySelector(".quiz__button_test");
 // const popupInfobutton = document.querySelector(".popup__info-button");
 // const popupInfo = document.querySelector(".popup__info");
 // popupInfobutton.addEventListener("click", closePopup);
-
-
 
 
 
@@ -223,12 +221,16 @@ function Update() {
 }
 
 
+
 function Click(index) {
   //Получаем номер правильного ответа
   let correct = quiz.checkAnswer(index);
   closeQuiz();
   if (correct) {
     quiz.onSuccess();
+  }
+  else {
+   alert('Вы ответили не верно')
   }
 }
 

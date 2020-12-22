@@ -1,4 +1,11 @@
-@import url(../vendor/normalize.css);
+
+@import url(./normalize.css);
+
+.popup__info-text {
+  
+  line-height: 2
+}
+
 
 .quiz__button_test {
   background: floralwhite;

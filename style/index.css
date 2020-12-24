@@ -1,4 +1,3 @@
-
 @import url(./normalize.css);
 
 .popup__info-text {
@@ -307,8 +306,8 @@
 
 
 .popup__container_type_message {
-  width: 600px;
-  height: 700px;
+  max-width: 600px;
+  max-height: 780px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -333,6 +332,19 @@
   height: 70%;
 }
 
+.popup__btn-wrapper {
+  display: flex;
+}
+
+.popup__print {
+  top: 1%;
+  top: 1;
+  z-index: 10;
+  position: absolute;
+  max-width: 50%;
+  left: 1%;
+}
+
 .popup__send-btn {
   width: 250px;
   height: 50px;
@@ -340,6 +352,8 @@
   color:#fff;
   font-size: 26px;
   line-height: 28px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .popup__category {

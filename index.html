@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+      <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="./style/index.css" />
   <link rel="stylesheet" href="./style/quiz.css" />
   <link rel="stylesheet" href="./style/slider.css" />
+  <link rel="stylesheet" href="./style/print.css" />
 
 </head>
 
@@ -106,8 +108,6 @@
       <section class="news page__max">
         <h2 class="news__title" id="news">Новости</h2>
         <!-- <div class="news__grid">
-
-
           <article class="news-card">
             <img class="news-card__pic" src="./images/mask.jpg" alt="Маска медицинская" />
             <div class="news-card__header">
@@ -312,18 +312,22 @@
           <p class="popup__category"></p>
 
           <p class="popup__text"></p>
-
+          <img class="popup__print" src="././images/oplacheno.png" alt="печать">
         </div>
-        <button class="popup__send-btn" type="submit">Отправить</button>
+        <div class="popup__btn-wrapper">
+          <button class="popup__send-btn" type="submit">Отправить</button>
+          <a href="javascript:window.print ()"><button class="popup__send-btn popup__send-btn-print">Печать</button></a>
+        </div>
         <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
       </div>
     </section>
 
-
     <section class="popup popup__quiz">
       <div class="quiz__container">
-        <div class="quiz__head">
+        <div class="quiz__title">
           <h3 class="">Ответьте верно, что-бы продолжить</h3>
+        </div>
+        <div class="quiz__head">
           <div class="head__content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она
             завоет, То
             заплачет, как дитя...</div>
@@ -351,4 +355,4 @@
   <script type="module" src="components/slider.js"></script>
 </body>
 
-</html>
+</html>        

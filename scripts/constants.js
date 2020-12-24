@@ -270,7 +270,7 @@ export const poems = {
   "Банкротство физического лица": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['банкротство'])}</p>`,
 
   //Документы, итоговый формат для вставки
-  "Биометрический паспорт-татуировка": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['паспорт'])}</p>`,
+  "Биометрический паспорт": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['паспорт'])}</p>`,
   "Получение разрешения на выезд заграницу": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['выезд'])}</p>`,
   "Оформление гражданства": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['гражданство'])}</p>`,
 };

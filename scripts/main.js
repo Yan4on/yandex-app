@@ -42,7 +42,7 @@ const buttonTestQuiz = document.querySelector(".quiz__button_test");
 // const popupInfo = document.querySelector(".popup__info");
 // popupInfobutton.addEventListener("click", closePopup);
 
-
+const popupSubmitForm = document.querySelector(".popup_submit-form")
 
 //Класс, который представляет сам тест
 
@@ -92,7 +92,7 @@ class Answer {
 }
 
 
-
+const PopupQuizError = document.querySelector('.popup_quiz-error')
 
 
 // --- ФУНКЦИИ ---
@@ -215,7 +215,7 @@ function Click(index) {
     quiz.onSuccess();
   }
   else {
-   alert('Вы ответили не верно')
+    openPopup(PopupQuizError)
   }
 }
 
@@ -242,6 +242,7 @@ popupForm.addEventListener("submit", handlePopupSubmit);
 
 popupSendBlank.addEventListener("click", () => {
   closePopup(popupWithBlank);
+  openPopup(popupSubmitForm)
 });
 
 newsCardLike.forEach((element) => {

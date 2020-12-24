@@ -8,7 +8,6 @@
   <meta name="description" content="Хакатон «2025: Гражданин-поэт»" />
   <link rel="stylesheet" href="./style/index.css" />
   <link rel="stylesheet" href="./style/quiz.css" />
-  <link rel="stylesheet" href="./style/slider.css" />
 
 </head>
 
@@ -16,7 +15,9 @@
   <div class="page">
     <header class="header">
       <div class="header__box page__max">
-        <img class="logo logo_place_header" src="./images/logo.png" alt="логотип" />
+        <div class="logo logo_place_header">
+          <p class="logo__text">Гражданин.Поэт</p>
+        </div>
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
@@ -34,11 +35,21 @@
     </header>
 
     <main class="content">
+      <section class="introduce">
+        <h1 class="introduce__title">Сделай свою жизнь лучше, просто оставь заявку!</h1>
+        <p class="introduce__subtitle">Проект призван помочь гражданам обратиться в госучереждения в установленной Российской Федерацией стихотворной форме</p>
+        <a class="introduce__link" href="#services">
+          <p class="introduce__link-text">Выбрать категорию</p>
+        </a>
+
+
+      </section>
+
       <section class="services page__max" id="services">
         <div class="card">
-          <img src="./images/med.png" alt="Медицинские услуги" class="card__pic" />
+          <h2 class="card__title">Медицина</h2>
           <div class="card__content">
-            <h2 class="card__title">Медицина</h2>
+            <img src="./images/medicine.svg" alt="Медицинские услуги" class="card__pic">
             <ul class="card__menu">
               <li class="card__menu-item">Оформление робота-помощника</li>
               <li class="card__menu-item">Изготовление экзоскелета</li>
@@ -47,9 +58,9 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/educ.png" alt="Образование" class="card__pic" />
+          <h2 class="card__title">Образование</h2>
           <div class="card__content">
-            <h2 class="card__title">Образование</h2>
+            <img src="./images/knowledg.svg" alt="Образование" class="card__pic">
             <ul class="card__menu">
               <li class="card__menu-item">Результаты ЕГЭ-2025</li>
               <li class="card__menu-item">Поступление в ВУЗ</li>
@@ -58,9 +69,9 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/domestic-serv.png" alt="Образование" class="card__pic" />
+          <h2 class="card__title">ЖКХ</h2>
           <div class="card__content">
-            <h2 class="card__title">ЖКХ</h2>
+            <img src="./images/road.svg" alt="ЖКХ" class="card__pic">
             <ul class="card__menu">
               <li class="card__menu-item">Неисправность ветрогенератора</li>
               <li class="card__menu-item">Установка солнечных батарей</li>
@@ -69,9 +80,9 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/transport.png" alt="Транспорт" class="card__pic" />
+          <h2 class="card__title">Транспорт</h2>
           <div class="card__content">
-            <h2 class="card__title">Транспорт</h2>
+            <img src="./images/subway.svg" alt="Транспорт" class="card__pic">
             <ul class="card__menu">
               <li class="card__menu-item">Аварийное состояние дорожного полотна</li>
               <li class="card__menu-item">Нарушение ПДД беспилотным авто</li>
@@ -80,20 +91,20 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/vector.png" alt="Документы" class="card__pic" />
+          <h2 class="card__title">Документы</h2>
           <div class="card__content">
-            <h2 class="card__title">Документы</h2>
+            <img src="./images/documents.svg" alt="Документы" class="card__pic">
             <ul class="card__menu">
-              <li class="card__menu-item">Биометрический паспорт-татуировка;</li>
+              <li class="card__menu-item">Биометрический паспорт</li>
               <li class="card__menu-item">Получение разрешения на выезд заграницу</li>
               <li class="card__menu-item">Оформление гражданства</li>
             </ul>
           </div>
         </div>
         <div class="card">
-          <img src="./images/vector.png" alt="Налоги" class="card__pic" />
+          <h2 class="card__title">Налоги</h2>
           <div class="card__content">
-            <h2 class="card__title">Налоги</h2>
+            <img src="./images/online-payments.svg" alt="Налоги" class="card__pic">
             <ul class="card__menu">
               <li class="card__menu-item">Подача налоговой декларации</li>
               <li class="card__menu-item">Нарушение уплаты налогов</li>
@@ -103,144 +114,81 @@
         </div>
       </section>
 
-      <section class="news page__max">
-        <h2 class="news__title" id="news">Новости</h2>
-        <!-- <div class="news__grid">
-
-
-          <article class="news-card">
-            <img class="news-card__pic" src="./images/mask.jpg" alt="Маска медицинская" />
-            <div class="news-card__header">
-              <h3 class="news-card__title">Начата вакцинация населения от COVID</h3>
-              <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
-            </div>
-            <div class="news-card__desc">
-              <p class="news-card__poem">
-                Убытки терпит целая страна,<br>
-                Но вера есть, все зиждется на вере, -<br>
-                Объявлена смертельная война<br>
-                Одной несчастной, бедненькой холере.
-              </p>
-              <p class="news-card__poem">
-                На трудовую вахту встал народ<br>
-                В честь битвы с новоявленною порчей, -<br>
-                Но пасаран, холера не пройдет,<br>
-                Холере - нет, и все, и бал окончен!
-              </p>
-            </div>
-          </article>
-          <article class="news-card">
-            <img class="news-card__pic" src="./images/pic.jpg" alt="Маска медицинская" />
-            <div class="news-card__header">
-              <h3 class="news-card__title">Смонтирован новый водосток на ул.Веры 15</h3>
-              <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
-            </div>
-            <div class="news-card__desc">
-              <p class="news-card__poem">
-                Я сразу смазал карту будня,<br>
-                плеснувши краску из стакана;<br>
-                я показал на блюде студня<br>
-                косые скулы океана.<br>
-                На чешуе жестяной рыбы<br>
-                прочёл я зовы новых губ.<br>
-                А вы<br>
-                ноктюрн сыграть<br>
-                могли бы<br>
-                на флейте водосточных труб?
-              </p>
-            </div>
-          </article>
-          <article class="news-card">
-            <img class="news-card__pic" src="./images/pic-one.jpg" alt="Маска медицинская" />
-            <div class="news-card__header">
-              <h3 class="news-card__title">Восстановлено транспортное сообщение после синейшего снегопада</h3>
-              <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
-            </div>
-            <div class="news-card__desc">
-              <p class="news-card__poem">
-                Опять он падает, чудесно молчаливый,<br>
-                Легко колеблется и опускается...<br>
-                Как сердцу сладостен полет его счастливый!<br>
-                Несуществующий, он вновь рождается...<br>
-              </p>
-              <p class="news-card__poem">
-                Пускай уйдет опять - но не страшна утрата.<br>
-                Мне радостен его отход таинственный.<br>
-                Я вечно буду ждать его безмолвного возврата,<br>
-                Тебя, о ласковый, тебя, единственный.<br>
-              </p>
-            </div>
-          </article>
-        </div> -->
-
-        <div class="slider">
+      <section class="news">
+        <div class="slider page__max">
+          <h2 class="news__title" id="news">Новости</h2>
           <div class="slider__wrapper">
             <div class="slider__item">
-              <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
+              <img class="slider__img" src="./images/mayakovkiy.jpg" alt="изображение слайдера">
               <div class="slider__text-like">
-                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
+                <h4 class="news-card__title">Смонтированы новые водостоки в Москве</h4>
                 <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
               </div>
               <div class="slider__news-box">
                 <p class="slider__news">
-                  Убытки терпит целая страна,<br>
-                  Но вера есть, все зиждется на вере, -<br>
-                  Объявлена смертельная война<br>
-                  Одной несчастной, бедненькой холере.
+                  Я сразу смазал карту будня,<br>
+                  плеснувши краску из стакана;<br>
+                  я показал на блюде студня<br>
+                  косые скулы океана.<br>
+                  На чешуе жестяной рыбы<br>
+                  прочёл я зовы новых губ.<br>
+                  <br>
+                  А вы<br>
+                  ноктюрн сыграть<br>
+                  могли бы<br>
+                  на флейте водосточных труб?
                 </p>
               </div>
             </div>
             <div class="slider__item">
-              <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
+              <img class="slider__img" src="./images/isol.jpg" alt="изображение слайдера">
               <div class="slider__text-like">
-                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
+                <h4 class="news-card__title">Режим изоляции продлен</h4>
                 <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
               </div>
               <div class="slider__news-box">
                 <p class="slider__news">
-                  Убытки терпит целая страна,<br>
-                  Но вера есть, все зиждется на вере, -<br>
-                  Объявлена смертельная война<br>
-                  Одной несчастной, бедненькой холере.
+                  Не выходи из комнаты, не совершай ошибку.<br>
+                  Зачем тебе Солнце, если ты куришь Шипку?<br>
+                  За дверью бессмысленно все, особенно —<br>
+                  возглас счастья.<br>
+                  Только в уборную — и сразу же возвращайся.<br>
+                  <br>
+                  Не выходи из комнаты; считай, что тебя продуло.<br>
+                  Что интересней на свете стены и стула?<br>
+                  Зачем выходить оттуда, куда вернешься вечером<br>
+                  таким же, каким ты был, тем более — изувеченным?
                 </p>
               </div>
             </div>
             <div class="slider__item">
-              <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
+              <img class="slider__img" src="./images/isol.jpg" alt="изображение слайдера">
               <div class="slider__text-like">
-                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
+                <h4 class="news-card__title">Режим изоляции продлен</h4>
                 <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
               </div>
               <div class="slider__news-box">
                 <p class="slider__news">
-                  Убытки терпит целая страна,<br>
-                  Но вера есть, все зиждется на вере, -<br>
-                  Объявлена смертельная война<br>
-                  Одной несчастной, бедненькой холере.
+                  Не выходи из комнаты, не совершай ошибку.<br>
+                  Зачем тебе Солнце, если ты куришь Шипку?<br>
+                  За дверью бессмысленно все, особенно —<br>
+                  возглас счастья.<br>
+                  Только в уборную — и сразу же возвращайся.<br>
+                  <br>
+                  Не выходи из комнаты; считай, что тебя продуло.<br>
+                  Что интересней на свете стены и стула?<br>
+                  Зачем выходить оттуда, куда вернешься вечером<br>
+                  таким же, каким ты был, тем более — изувеченным?
                 </p>
               </div>
             </div>
-            <div class="slider__item">
-              <img class="slider__img" src="././images/mask.jpg" alt="изображение слайдера">
-              <div class="slider__text-like">
-                <h4 class="news-card__title">Начата вакцинация населения от COVID</h4>
-                <button class="news-card__like" type="button" aria-label="Лайкнуть"></button>
-              </div>
-              <div class="slider__news-box">
-                <p class="slider__news">
-                  Убытки терпит целая страна,<br>
-                  Но вера есть, все зиждется на вере, -<br>
-                  Объявлена смертельная война<br>
-                  Одной несчастной, бедненькой холере.
-                </p>
-              </div>
-            </div>
+
           </div>
           <a class="slider__control slider__control_left" href="#" role="button"></a>
           <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
         </div>
-
       </section>
+
       <div class="quiz__error" id="one"></div>
     </main>
 

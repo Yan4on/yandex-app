@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -8,6 +9,7 @@
   <meta name="description" content="Хакатон «2025: Гражданин-поэт»" />
   <link rel="stylesheet" href="./style/index.css" />
   <link rel="stylesheet" href="./style/quiz.css" />
+  <link rel="stylesheet" href="./style/print.css" />
 
 </head>
 
@@ -114,9 +116,13 @@
         </div>
       </section>
 
+
       <section class="news">
         <div class="slider page__max">
           <h2 class="news__title" id="news">Новости</h2>
+
+        <div class="slider">
+
           <div class="slider__wrapper">
             <div class="slider__item">
               <img class="slider__img" src="./images/mayakovkiy.jpg" alt="изображение слайдера">
@@ -260,18 +266,22 @@
           <p class="popup__category"></p>
 
           <p class="popup__text"></p>
-
+          <img class="popup__print" src="././images/oplacheno.png" alt="печать">
         </div>
-        <button class="popup__send-btn" type="submit">Отправить</button>
+        <div class="popup__btn-wrapper">
+          <button class="popup__send-btn" type="submit">Отправить</button>
+          <a href="javascript:window.print ()"><button class="popup__send-btn popup__send-btn-print">Печать</button></a>
+        </div>
         <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
       </div>
     </section>
 
-
     <section class="popup popup__quiz">
       <div class="quiz__container">
-        <div class="quiz__head">
+        <div class="quiz__title">
           <h3 class="">Ответьте верно, что-бы продолжить</h3>
+        </div>
+        <div class="quiz__head">
           <div class="head__content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она
             завоет, То
             заплачет, как дитя...</div>
@@ -292,6 +302,26 @@
         </div>
     </section>
 
+    <section class="popup popup_quiz-error">
+      <div class="popup__container popup__container_quiz-error">
+        <div class="popup__content">
+          <h2 class="popup__title popup__title_type_message">Вы ответили не верно</h2>
+          
+        </div>
+        <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
+      </div>
+    </section>
+
+    <section class="popup popup_submit-form">
+      <div class="popup__container popup__container_submit-form">
+        <div class="popup__content">
+          <p class="popup__title popup__title_submit-form">Ваше обращение будет рассмотренно в течении 5 рабочих дней<p>
+          
+        </div>
+        <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
+      </div>
+    </section>
+
   </div>
 
 
@@ -299,4 +329,4 @@
   <script type="module" src="components/slider.js"></script>
 </body>
 
-</html>
+</html>        

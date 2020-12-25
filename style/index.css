@@ -22,6 +22,10 @@
   margin: 0 auto;
 }
 
+.popup_type_blank {
+  opacity: 1;
+  visibility: hidden;
+}
 
 .page__max {
   max-width: 1100px;
@@ -475,10 +479,6 @@
   background-color:  #E5E5E5;
   color: rgb(126, 126, 126);
 }
-
-
-
-
 
 
 .popup__close {

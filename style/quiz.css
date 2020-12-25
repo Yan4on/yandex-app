@@ -36,30 +36,15 @@
     justify-content: center;
     display: flex;
     text-align: start;
-    /* margin: 10px; */
   }
 
   .head__content {
-    /* margin: auto; */
     font-size: 24px;
     line-height: 29px;
     max-width: 300px;
     font-weight: normal;
     margin-bottom: 30px;
-    /* text-align: center; */
   }
-
-
-  /* .quiz__footer {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-  }
-
-  .footer__content {
-    padding: 5px;
-  } */
 
 
 .buttons__content {
@@ -103,3 +88,4 @@
   .button_passive {
     background-color: #E6E6E6;
   }
+

@@ -73,7 +73,7 @@
         <div class="card">
           <h2 class="card__title">ЖКХ</h2>
           <div class="card__content">
-            <img src="./images/road.svg" alt="ЖКХ" class="card__pic">
+            <img src="./images/undraw_wind_turbine_x2k4.svg" alt="ЖКХ" class="card__pic">
             <ul class="card__menu">
               <li class="card__menu-item">Неисправность ветрогенератора</li>
               <li class="card__menu-item">Установка солнечных батарей</li>
@@ -84,7 +84,7 @@
         <div class="card">
           <h2 class="card__title">Транспорт</h2>
           <div class="card__content">
-            <img src="./images/subway.svg" alt="Транспорт" class="card__pic">
+            <img src="./images/undraw_order_ride_xjs4.svg" alt="Транспорт" class="card__pic">
             <ul class="card__menu">
               <li class="card__menu-item">Аварийное состояние дорожного полотна</li>
               <li class="card__menu-item">Нарушение ПДД беспилотным авто</li>
@@ -300,21 +300,19 @@
 
     <section class="popup popup_type_blank">
       <div class="popup__container popup__container_type_message">
+        <img class="popup__print" src="././images/russia.png" alt="печать">
         <div class="popup__header">
-          <p class="popup__name"></p>
-          <p class="popup__email"></p>
-          <p class="popup__tel"></p>
+          <p class="popup__field popup__name"></p>
+          <p class="popup__field popup__email"></p>
+          <p class="popup__field popup__tel"></p>
+          <p class="popup__field popup__category"></p>
         </div>
         <div class="popup__content">
-          <h2 class="popup__title popup__title_type_message">ЗАЯВКА</h2>
-          <p class="popup__category"></p>
-
+          <h2 class="popup__title popup__title_type_message">Заявление</h2>
           <p class="popup__text"></p>
-          <img class="popup__print" src="././images/russia.png" alt="печать">
         </div>
         <div class="popup__btn-wrapper">
           <button class="popup__send-btn" type="submit">Отправить</button>
-          <!-- а -->
         </div>
         <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
       </div>
@@ -340,16 +338,15 @@
             </div>
           </div>
           <div class="quiz__error" id="error"></div>
-          <!-- <div class="quiz__footer">
-            <div class="footer__content" id="pages">0 / 0</div>
-          </div> -->
         </div>
     </section>
 
     <section class="popup popup_quiz-error">
       <div class="popup__container popup__container_quiz-error">
         <div class="popup__content">
-          <h2 class="popup__title popup__title_type_message">Ответ не верный. Попробуйте еще раз!</h2>
+          <img src="./images/undraw_settings_tab_mgiw.svg" alt="Изображение выбора ответа" class="popup__pic">
+          <h2 class="popup__title popup__title_type_message">Увы, ответ не верный</h2>
+          <p class="popup__subtitle">Попробуйте еще раз!</p>
         </div>
         <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
       </div>
@@ -357,11 +354,13 @@
 
     <section class="popup popup_submit-form">
       <div class="popup__container popup__container_submit-form">
-        <div class="popup__content">
-          <p class="popup__title popup__title_submit-form">Ваше обращение будет рассмотренно в течении 5 рабочих дней<p>
+        <div class="popup__content popup__content_type_send-form">
+          <img src="./images/undraw_Mail_sent_re_0ofv.svg" alt="Изображение выбора ответа" class="popup__pic popup__pic_type_send-form">
+          <h2 class="popup__subtitle">Ваше обращение успешно отправлено!</h2>
+          <p class="popup__title popup__title_type_send-form">Срок рассмотрения - в течение 5 рабочих дней</p>
+          <a href="javascript:window.print ()" class="popup__link-print"><button class="popup__send-btn popup__send-btn-print">Сохранить копию</button></a>
+          <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
         </div>
-        <a href="javascript:window.print ()"><button class="popup__send-btn popup__send-btn-print">Печать</button></a>
-        <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
       </div>
     </section>
 

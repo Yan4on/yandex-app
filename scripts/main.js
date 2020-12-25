@@ -124,7 +124,7 @@ function fillBlank({
 ) {
   popupWithBlank.querySelector(
     ".popup__name"
-  ).textContent = `${popupSurname} ${popupName}`;
+  ).textContent = `От кого: ${popupSurname} ${popupName}`;
   popupWithBlank.querySelector(
     ".popup__email"
   ).textContent = `e-mail: ${popupEmail}`;

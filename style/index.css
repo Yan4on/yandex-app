@@ -207,8 +207,6 @@
   display: flex;
 }
 
-
-
 .card__content {
   margin: auto;
   z-index: 2;
@@ -221,7 +219,6 @@
   background-size: cover;
   padding: 30px 20px;
   box-sizing: border-box;
-
 }
 
 .card__pic {
@@ -469,8 +466,6 @@
   color: #095256;
 }
 
-
-
 .popup__submit-btn_inactive {
   background-color:  #E5E5E5;
   color: rgb(126, 126, 126);
@@ -508,9 +503,11 @@
 }
 
 
+
+
 .popup__container_type_message {
-  max-width: 600px;
-  max-height: 780px;
+  width: 700px;
+  height: 700px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -564,6 +561,24 @@
   margin: 0 0 10px;
 }
 
-.popup__title_type_message {
-  margin: 20px 0 10px;
+
+
+.popup__pic {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 60px;
+}
+
+.popup__title_type_message{
+  font-size: 32px;
+  color: #095256;
+  margin-bottom: 16px;
+}
+
+.popup__subtitle{
+  font-size: 36px;
+  font-weight: bold;
+  color: #FF8811;
+  margin: 0;
 }

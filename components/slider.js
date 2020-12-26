@@ -12,8 +12,21 @@
           _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
           _positionLeftItem = 0, // позиция левого активного элемента
           _transform = 0, // значение транфсофрмации .slider_wrapper
-          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
-          _items = []; // массив элементов
+          _step = _itemWidth / _wrapperWidth * 105, // величина шага (для трансформации)
+          _items = [], // массив элементов
+          _interval = 0,
+          _config = {
+            isCycling: false, // автоматическая смена слайдов
+            direction: 'right', // направление смены слайдов
+            interval: 5000000, // интервал между автоматической сменой слайдов
+            pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+          };
+
+        for (var key in config) {
+          if (key in _config) {
+            _config[key] = config[key];
+          }
+        }
 
         // наполнение массива _items
         _sliderItems.forEach(function (item, index) {
@@ -72,12 +85,23 @@
           _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
         }
 
+        var _cycle = function (direction) {
+          if (!_config.isCycling) {
+            return;
+          }
+          _interval = setInterval(function () {
+            _transformItem(direction);
+          }, _config.interval);
+        }
+
         // обработчик события click для кнопок "назад" и "вперед"
         var _controlClick = function (e) {
           if (e.target.classList.contains('slider__control')) {
             e.preventDefault();
             var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
             _transformItem(direction);
+            clearInterval(_interval);
+            _cycle(_config.direction);
           }
         };
 
@@ -86,10 +110,20 @@
           _sliderControls.forEach(function (item) {
             item.addEventListener('click', _controlClick);
           });
+          if (_config.pause && _config.isCycling) {
+            _mainElement.addEventListener('mouseenter', function () {
+              clearInterval(_interval);
+            });
+            _mainElement.addEventListener('mouseleave', function () {
+              clearInterval(_interval);
+              _cycle(_config.direction);
+            });
+          }
         }
 
         // инициализация
         _setUpListeners();
+        _cycle(_config.direction);
 
         return {
           right: function () { // метод right
@@ -97,10 +131,21 @@
           },
           left: function () { // метод left
             _transformItem('left');
+          },
+          stop: function () { // метод stop
+            _config.isCycling = false;
+            clearInterval(_interval);
+          },
+          cycle: function () { // метод cycle 
+            _config.isCycling = true;
+            clearInterval(_interval);
+            _cycle();
           }
         }
 
       }
     }());
 
-    var slider = multiItemSlider('.slider')
+    var slider = multiItemSlider('.slider', {
+      isCycling: true
+    })

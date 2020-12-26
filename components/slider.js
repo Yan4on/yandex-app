@@ -12,7 +12,7 @@
           _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
           _positionLeftItem = 0, // позиция левого активного элемента
           _transform = 0, // значение транфсофрмации .slider_wrapper
-          _step = _itemWidth / _wrapperWidth * 103.7, // величина шага (для трансформации)
+          _step = _itemWidth / _wrapperWidth * 103.75555, // величина шага (для трансформации)
           _items = [], // массив элементов
           _interval = 0,
           _config = {

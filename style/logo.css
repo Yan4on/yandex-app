@@ -1,0 +1,45 @@
+.logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 350px;
+  height: 59px;
+  position: relative;
+}
+
+.logo::after {
+  content: '';
+  width: 219px;
+  height: 45px;
+  position: absolute;
+  background-color: #FF8811;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logo__text {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  z-index: 2;
+  color: #095256;
+}
+
+
+.logo_place_footer {
+  align-items: center;
+}
+
+.logo.logo_place_footer::after {
+  top: -14px;
+
+}
+
+.logo__text_place_footer {
+  color: #fff;
+}
+

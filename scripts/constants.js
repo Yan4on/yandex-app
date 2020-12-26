@@ -1,13 +1,34 @@
+// ---ДАННЫЕ ---
 
-function createPoemsLineByLine(str) {
-  const arr = str.split(/(?=[А-Я])/);
-  // console.groupCollapsed(arr)
-  const resultArr = arr.map((item) => {
-    return (item = item + "<br>");
-  });
-  // console.log(resultArr.join(''));
-  return resultArr.join("");
-}
+//объект параметров для валидации форм
+export const validationObject = {
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__submit-btn',
+  inactiveButtonClass: 'popup__submit-btn_inactive',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__input-error_active',
+  customMesseges:{
+    phoneNumber: 'Введите телефон в формате +7 999 999 99 99'
+  },
+};
+
+export const content = document.querySelector(".content");
+export const subcategoryList = content.querySelectorAll(".card__menu-item");
+
+export const popupWithForm = document.querySelector(".popup_type_form");
+export const popupForm = popupWithForm.querySelector(".popup__form");
+export const popupInputCat = popupWithForm.querySelector("#category");
+export const popupWithBlank = document.querySelector(".popup_type_blank");
+export const popupSendBlank = document.querySelector(".popup__send-btn");
+export const inputList = popupForm.querySelectorAll(".popup__input");
+
+export const headElem = document.getElementById("head");
+export const buttonsElem = document.getElementById("buttons");
+export const newsCardLike = document.querySelectorAll(".news-card__like");
+export const quizPopup = document.querySelector(".popup__quiz");
+
+export const popupSubmitForm = document.querySelector(".popup_submit-form")
 
 
 // Исходные стихи по медицине
@@ -275,3 +296,14 @@ export const poems = {
   "Оформление гражданства": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['гражданство'])}</p>`,
 };
 
+
+//вспомогательная ф-я для верного отображения стихов
+function createPoemsLineByLine(str) {
+  const arr = str.split(/(?=[А-Я])/);
+  // console.groupCollapsed(arr)
+  const resultArr = arr.map((item) => {
+    return (item = item + "<br>");
+  });
+  // console.log(resultArr.join(''));
+  return resultArr.join("");
+}

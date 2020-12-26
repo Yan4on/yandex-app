@@ -45,8 +45,8 @@
   min-height: 26px;
   object-fit: cover;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 90%;
+  right: 10%;
   margin-left: 10px;
   z-index: 4;
   transition: transform .3s ease-in;

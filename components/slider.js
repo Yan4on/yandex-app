@@ -12,13 +12,13 @@
           _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
           _positionLeftItem = 0, // позиция левого активного элемента
           _transform = 0, // значение транфсофрмации .slider_wrapper
-          _step = _itemWidth / _wrapperWidth * 105, // величина шага (для трансформации)
+          _step = _itemWidth / _wrapperWidth * 103.7, // величина шага (для трансформации)
           _items = [], // массив элементов
           _interval = 0,
           _config = {
             isCycling: false, // автоматическая смена слайдов
             direction: 'right', // направление смены слайдов
-            interval: 5000000, // интервал между автоматической сменой слайдов
+            interval: 6000, // интервал между автоматической сменой слайдов
             pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
           };
 

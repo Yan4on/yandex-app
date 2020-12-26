@@ -1,51 +1,23 @@
 import FormValidator from '../components/FormValidator.js';
-import { poems } from  './constants.js';
+import {
+  poems,
+  validationObject,
+  subcategoryList,
+  popupWithForm,
+  popupInputCat,
+  popupWithBlank,
+  popupSendBlank,
+  popupForm,
+  headElem,
+  buttonsElem,
+  newsCardLike,
+  quizPopup,
+  popupSubmitForm,
+  inputList
+} from './constants.js';
 
-
-
-// ---ДАННЫЕ ---
-const content = document.querySelector(".content");
-const subcategoryList = content.querySelectorAll(".card__menu-item");
-
-
-const popupWithForm = document.querySelector(".popup_type_form");
-const popupForm = popupWithForm.querySelector(".popup__form");
-const popupInputCat = popupWithForm.querySelector("#category");
-const popupWithBlank = document.querySelector(".popup_type_blank");
-const popupSendBlank = document.querySelector(".popup__send-btn");
-const inputList = popupForm.querySelectorAll(".popup__input");
-
-//объект параметров для валидации форм
-const validationObject = {
-  formSelector: '.popup__form',
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__submit-btn',
-  inactiveButtonClass: 'popup__submit-btn_inactive',
-  inputErrorClass: 'popup__input_type_error',
-  errorClass: 'popup__input-error_active',
-  customMesseges:{
-    phoneNumber: 'Введите телефон в формате +7 999 999 99 99'
-  },
-};
-
-
-const headElem = document.getElementById("head");
-const buttonsElem = document.getElementById("buttons");
-const pagesElem = document.getElementById("pages");
-const newsCardLike = document.querySelectorAll(".news-card__like");
-const quizPopup = document.querySelector(".popup__quiz");
-const buttonTestQuiz = document.querySelector(".quiz__button_test");
-
-
-// ИнфоПопап
-// const popupInfobutton = document.querySelector(".popup__info-button");
-// const popupInfo = document.querySelector(".popup__info");
-// popupInfobutton.addEventListener("click", closePopup);
-
-const popupSubmitForm = document.querySelector(".popup_submit-form")
 
 //Класс, который представляет сам тест
-
 class Quiz {
   constructor(questions, onSuccess = null) {
     //Массив с вопросами
@@ -162,12 +134,6 @@ function closeQuiz() {
   quizPopup.classList.remove("popup__quiz_opened");
 }
 
-// function handleQuizClick(evt) {
-//   if (evt.target.classList.contains("popup")) {
-//     closeQuiz();
-//   }
-// }
-
 function handleLikeClick(likeBtn) {
   likeBtn.classList.toggle("news-card__like_active");
 }
@@ -205,16 +171,13 @@ function Update() {
   }
 }
 
-
-
 function Click(index) {
   //Получаем номер правильного ответа
   let correct = quiz.checkAnswer(index);
   closeQuiz();
   if (correct) {
     quiz.onSuccess();
-  }
-  else {
+  } else {
     openPopup(PopupQuizError)
   }
 }
@@ -222,6 +185,7 @@ function Click(index) {
 
 
 // --- ОБРАБОТЧИКИ СОБЫТИЙ ---
+//собираем все категории услуг
 subcategoryList.forEach((element) => {
   element.addEventListener("click", () => {
     openPopup(popupWithForm);
@@ -230,14 +194,20 @@ subcategoryList.forEach((element) => {
   });
 });
 
+//собираем все кнопки закрытия попапов
 document.querySelectorAll(".popup__close").forEach((element) => {
   element.addEventListener("click", () => {
     closePopup(element.closest(".popup"));
   });
 });
 
+//обработчики клика по оверлею
 popupWithForm.addEventListener("mousedown", handlePopupClick);
+popupWithBlank.addEventListener("mousedown", handlePopupClick);
+PopupQuizError.addEventListener("mousedown", handlePopupClick);
+popupSubmitForm.addEventListener("mousedown", handlePopupClick);
 
+//обработчик отправки формы
 popupForm.addEventListener("submit", handlePopupSubmit);
 
 popupSendBlank.addEventListener("click", () => {
@@ -245,6 +215,7 @@ popupSendBlank.addEventListener("click", () => {
   openPopup(popupSubmitForm)
 });
 
+//лайк на новости
 newsCardLike.forEach((element) => {
   element.addEventListener("click", () => {
     handleLikeClick(element);
@@ -253,10 +224,8 @@ newsCardLike.forEach((element) => {
 
 
 // --- ДЕЙСТВИЯ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ  ---
-
 const validFormPopupUser = new FormValidator(validationObject, ".popup_type_form");
 validFormPopupUser.enableValidation();
-
 
 
 const questions = [

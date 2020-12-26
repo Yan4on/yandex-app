@@ -27,9 +27,9 @@
             <li class="header__menu-item">
               <a href="#news" class="header__link">Новости</a>
             </li>
-            <!-- <li class="header__menu-item">
-              <a href="#" class="header__link">Помощь</a>
-            </li> -->
+            <li class="header__menu-item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -43,8 +43,6 @@
         <a class="introduce__link" href="#services">
           <p class="introduce__link-text">Выбрать категорию</p>
         </a>
-
-
       </section>
 
       <section class="services page__max" id="services">
@@ -242,26 +240,40 @@
       <div class="quiz__error" id="one"></div>
     </main>
 
-    <!-- <section class="popup popup__info popup_opened">
-            <div class="popup__container">
-                <p class="popup__info-text">
-                    Приветствуем Вас на портале "Активный Гражданин 2025"
-                    Проект призван помочь гражданам обратиться в гос.учереждения по средствам
-                    заполнения универсальной формы,
-                    после заполнения которой, Ваше ображение будет заполнено в стихотворной форме, что является
-                    обязательным
-                    требованием РФ в 2025 году.
-                    Вам необходимо выбрать категорию(сейчас доступна "МЕДИЦИНА" и подкатегорию), после этого Вы должны
-                    пройти
-                    проверку на человечность(капча) и правильно
-                    ответить на вопрос.
-                    После прохождения теста, вы получите заполненую форму для отправки в соответствующую
-                    инстанцию.(сейчас никуда
-                    не уходит,ничего с ней сделать нельзя)
-                </p>
-                <button class="popup__info-button popup__close"></button>
-            </div>
-        </section> -->
+    <footer class="footer"  id='footer'>
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_copyright">
+          <div class="logo logo_place_footer">
+            <p class="logo__text logo__text_place_footer">Гражданин.Поэт</p>
+          </div>
+          <div class="footer__author-box">
+            <p class="footer__author"> &copy; Анна Костромина</p>
+            <p class="footer__author"> &copy; Янис Широких</p>
+            <p class="footer__author"> &copy; Александра Шевченко</p>
+            <p class="footer__author">2020</p>
+          </div>
+
+        </div>
+        <nav class="footer__column footer__column_content_info">
+          <h4 class="footer__column-heading">О Проекте</h4>
+          <ul class="footer__column-links">
+            <li><a class="footer__text" href="#" target="_blank">Описание</a></li>
+            <li><a class="footer__text" href="https://www.notion.so/2025-c8543acca3bb411c88734a322cd3de0f" target="_blank">Задача</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column footer__column_content_social">
+          <h4 class="footer__column-heading">Контакты</h4>
+          <ul class="footer__column-links">
+            <li><a class="footer__text" href="#" target="_blank">
+              <img class="footer__social-icon" src="./images/facebook-app-logo.svg" alt="Facebook">Facebook</a></li>
+            <li><a class="footer__text" href="#" target="_blank">
+              <img class="footer__social-icon" src="./images/vk-reproductor.svg" alt="Вконтакте">ВКонтакте </a></li>
+            <li><a class="footer__text" href="#" target="_blank">
+              <img class="footer__social-icon" src="./images/instagram.svg" alt="Instagram">Instagram</a></li>
+            </ul>
+        </nav>
+      </div>
+    </footer>
 
     <section class="popup popup_type_form">
       <div class="popup__container">
@@ -367,7 +379,7 @@
   </div>
 
 
-  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/index.js"></script>
   <script type="module" src="components/slider.js"></script>
 </body>
 

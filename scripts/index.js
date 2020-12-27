@@ -1,6 +1,7 @@
 import FormValidator from '../components/FormValidator.js';
 import Quiz from '../components/quiz/Quiz.js'
 import Question from '../components/quiz/Question.js'
+import Answer from '../components/quiz/Answer.js'
 import { multiItemSlider } from '../components/slider.js';
 import {
   poems,
@@ -25,14 +26,6 @@ const PopupQuizError = document.querySelector('.popup_quiz-error')
 const validFormPopupUser = new FormValidator(validationObject, ".popup_type_form");
 validFormPopupUser.enableValidation();
 
-
-//Класс, представляющий ответ
-class Answer {
-  constructor(text, value) {
-    this.text = text;
-    this.value = value;
-  }
-}
 
 // --- ФУНКЦИИ ---
 function openPopup(typePopup) {

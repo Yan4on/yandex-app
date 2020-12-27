@@ -1,0 +1,7 @@
+.card__pic {
+  display: block;
+  flex-basis: 200px;
+  height: 146px;
+  object-fit: cover;
+  margin-right: 30px;
+}

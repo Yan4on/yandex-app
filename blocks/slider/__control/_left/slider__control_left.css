@@ -1,0 +1,8 @@
+.slider__control_left {
+  left: 0;
+}
+
+
+.slider__control_left::before {
+  background-image: url("../../../../images/left-arrow.png");
+}

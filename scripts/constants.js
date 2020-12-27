@@ -28,8 +28,9 @@ export const buttonsElem = document.getElementById("buttons");
 export const newsCardLike = document.querySelectorAll(".news-card__like");
 export const quizPopup = document.querySelector(".popup__quiz");
 
-export const popupSubmitForm = document.querySelector(".popup_submit-form")
+export const popupSubmitForm = document.querySelector(".popup_submit-form");
 
+export const popupQuizError = document.querySelector('.popup_quiz-error');
 
 // Исходные стихи по медицине
 const stringsOfPoems = {
@@ -295,7 +296,6 @@ export const poems = {
   "Получение разрешения на выезд заграницу": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['выезд'])}</p>`,
   "Оформление гражданства": `<p class="popup__text">${createPoemsLineByLine(stringsOfPoems['гражданство'])}</p>`,
 };
-
 
 //вспомогательная ф-я для верного отображения стихов
 function createPoemsLineByLine(str) {

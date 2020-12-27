@@ -31,7 +31,7 @@ export default class FormValidator {
   }
 
   _checkPhoneValidity(inputElement) {
-    if(inputElement.type === 'tel' && inputElement.validity.patternMismatch) {
+    if (inputElement.type === 'tel' && inputElement.validity.patternMismatch) {
       inputElement.setCustomValidity(this._customMesPhone)
     }
   }

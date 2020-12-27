@@ -1,7 +1,7 @@
 import FormValidator from '../components/FormValidator.js';
-import Quiz from '../components/quiz/Quiz.js'
-import Question from '../components/quiz/Question.js'
-import Answer from '../components/quiz/Answer.js'
+import Quiz from '../components/quiz/Quiz.js';
+import Question from '../components/quiz/Question.js';
+import Answer from '../components/quiz/Answer.js';
 import { multiItemSlider } from '../components/slider.js';
 import {
   poems,
@@ -17,11 +17,11 @@ import {
   newsCardLike,
   quizPopup,
   popupSubmitForm,
-  inputList
+  inputList,
+  popupQuizError
 } from './constants.js';
 
 
-const PopupQuizError = document.querySelector('.popup_quiz-error')
 // --- ДЕЙСТВИЯ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ  ---
 const validFormPopupUser = new FormValidator(validationObject, ".popup_type_form");
 validFormPopupUser.enableValidation();
@@ -29,7 +29,7 @@ validFormPopupUser.enableValidation();
 
 // --- ФУНКЦИИ ---
 function openPopup(typePopup) {
-  typePopup.classList.add("popup_opened");
+  typePopup.classList.add("popup_opened"); 
 }
 
 function closePopup(typePopup) {
@@ -83,15 +83,7 @@ function handlePopupSubmit(evt) {
 
   Update();
   quiz.result(() => openPopup(popupWithBlank));
-  openQuiz();
-}
-
-function openQuiz(onResult) {
-  quizPopup.classList.add("popup__quiz_opened");
-}
-
-function closeQuiz() {
-  quizPopup.classList.remove("popup__quiz_opened");
+  openPopup(quizPopup);
 }
 
 function handleLikeClick(likeBtn) {
@@ -134,15 +126,13 @@ function Update() {
 function Click(index) {
   //Получаем номер правильного ответа
   let correct = quiz.checkAnswer(index);
-  closeQuiz();
+  closePopup(quizPopup);
   if (correct) {
-    quiz.onSuccess();
+    quiz.onSuccess(); //если успешно, переход на форму бланка
   } else {
-    openPopup(PopupQuizError)
+    openPopup(popupQuizError) //иначе открыть попап с ошибкой
   }
 }
-
-
 
 // --- ОБРАБОТЧИКИ СОБЫТИЙ ---
 //собираем все категории услуг
@@ -164,7 +154,7 @@ document.querySelectorAll(".popup__close").forEach((element) => {
 //обработчики клика по оверлею
 popupWithForm.addEventListener("mousedown", handlePopupClick);
 popupWithBlank.addEventListener("mousedown", handlePopupClick);
-PopupQuizError.addEventListener("mousedown", handlePopupClick);
+popupQuizError.addEventListener("mousedown", handlePopupClick);
 popupSubmitForm.addEventListener("mousedown", handlePopupClick);
 
 //обработчик отправки формы
@@ -182,7 +172,7 @@ newsCardLike.forEach((element) => {
   });
 });
 
-
+// объект со стихами
 const questions = [
   new Question(
     `Буря мглою небо кроет,
@@ -262,5 +252,5 @@ const questions = [
   ),
 ];
 
-
 const quiz = new Quiz(questions);
+

@@ -1,10 +1,10 @@
 export default class Question {
     constructor(text, answers) {
-      this.text = text;
-      this.answers = answers;
+        this.text = text;
+        this.answers = answers;
     }
-  
+
     Click(index) {
-      return this.answers[index].value;
+        return this.answers[index].value;
     }
-  }
+}

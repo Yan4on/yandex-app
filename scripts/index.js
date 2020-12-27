@@ -1,4 +1,7 @@
 import FormValidator from '../components/FormValidator.js';
+import Quiz from '../components/quiz/Quiz.js'
+import Question from '../components/quiz/Question.js'
+import { multiItemSlider } from '../components/slider.js';
 import {
   poems,
   validationObject,
@@ -17,43 +20,11 @@ import {
 } from './constants.js';
 
 
-//Класс, который представляет сам тест
-class Quiz {
-  constructor(questions, onSuccess = null) {
-    //Массив с вопросами
-    this.questions = questions;
+const PopupQuizError = document.querySelector('.popup_quiz-error')
+// --- ДЕЙСТВИЯ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ  ---
+const validFormPopupUser = new FormValidator(validationObject, ".popup_type_form");
+validFormPopupUser.enableValidation();
 
-    //Номер текущего вопроса
-    this.current = 0;
-
-    this.onSuccess = onSuccess;
-  }
-
-  checkAnswer(index) {
-    return this.questions[this.current].answers[index].value == 1;
-  }
-
-  getQuestion() {
-    const id = parseInt(Math.random() * this.questions.length);
-    this.current = id;
-    return this.questions[id];
-  }
-  result(func) {
-    this.onSuccess = func;
-  }
-}
-
-//Класс, представляющий вопрос
-class Question {
-  constructor(text, answers) {
-    this.text = text;
-    this.answers = answers;
-  }
-
-  Click(index) {
-    return this.answers[index].value;
-  }
-}
 
 //Класс, представляющий ответ
 class Answer {
@@ -62,10 +33,6 @@ class Answer {
     this.value = value;
   }
 }
-
-
-const PopupQuizError = document.querySelector('.popup_quiz-error')
-
 
 // --- ФУНКЦИИ ---
 function openPopup(typePopup) {
@@ -221,11 +188,6 @@ newsCardLike.forEach((element) => {
     handleLikeClick(element);
   });
 });
-
-
-// --- ДЕЙСТВИЯ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ  ---
-const validFormPopupUser = new FormValidator(validationObject, ".popup_type_form");
-validFormPopupUser.enableValidation();
 
 
 const questions = [

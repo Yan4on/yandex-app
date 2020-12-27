@@ -1,6 +1,6 @@
 
 .news {
-  padding: 8px 0 60px;
+  padding: 8px 0 70px;
   position: relative;
   width: 100%;
   background-color: #fff;
@@ -31,6 +31,7 @@
   font-size: 24px;
   line-height: 29px;
   margin: 20px 0 0;
+  padding: 0% 5%;
 }
 
 .news-card__like {
@@ -41,12 +42,12 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  min-width: 26px;
-  min-height: 26px;
+  min-width: 28px;
+  min-height: 28px;
   object-fit: cover;
   position: absolute;
-  top: 90%;
-  right: 10%;
+  top: 93%;
+  right: 7%;
   margin-left: 10px;
   z-index: 4;
   transition: transform .3s ease-in;

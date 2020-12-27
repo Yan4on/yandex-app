@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 350px;
+  height: 59px;
+  position: relative;
+}
+
+.logo::after {
+  content: '';
+  width: 219px;
+  height: 45px;
+  position: absolute;
+  background-color: #FF8811;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

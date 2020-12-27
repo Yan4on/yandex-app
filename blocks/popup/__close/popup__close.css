@@ -1,0 +1,20 @@
+.popup__close {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background-image: url(../../../images/cross-remove-sign.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  transition: opacity .3s ease-in;
+}
+
+.popup__close:hover {
+  opacity: .7;
+  cursor: pointer;
+}

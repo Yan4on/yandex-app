@@ -1,0 +1,9 @@
+.logo__text_place_footer {
+  color: #fff;
+}
+
+.logo__text_place_footer::after {
+  bottom: 19px;
+  z-index: 1;
+  background-image: url(../../../../images/quill-white.svg);
+}

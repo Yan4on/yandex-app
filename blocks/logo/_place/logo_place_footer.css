@@ -1,0 +1,7 @@
+.logo_place_footer {
+  align-items: center;
+}
+
+.logo.logo_place_footer::after {
+  top: -14px;
+}

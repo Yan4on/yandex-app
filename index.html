@@ -7,10 +7,8 @@
   <title>Гражданин-поэт 2025</title>
   <meta name="description" content="Хакатон «2025: Гражданин-поэт»" />
   <link rel="icon" href="./images/favicon.gif" type="image/gif"/>
-  <link rel="stylesheet" href="./style/index.css" />
-  <link rel="stylesheet" href="./style/quiz.css" />
-  <link rel="stylesheet" href="./style/print.css" />
-
+  <link rel="stylesheet" href="./pages/index.css" />
+  <link rel="stylesheet" href="./pages/print.css" />
 </head>
 
 <body>
@@ -121,7 +119,7 @@
           <h2 class="news__title" id="news">Новости</h2>
           <div class="slider">
             <div class="slider__wrapper">
-              <div class="slider__item">
+              <div class="slider__item news-card">
                 <img class="slider__img" src="./images/snow-bench.jpg" alt="изображение слайдера">
                 <div class="slider__text-like">
                   <h4 class="news-card__title">На борьбу со снегопадом выведена вся дорожная техника</h4>
@@ -142,7 +140,7 @@
                   <cite class="slider__author">«Снег». Гиппиус Зинаида (1897)</cite>
                 </blockquote>
               </div>
-              <div class="slider__item">
+              <div class="slider__item news-card">
                 <img class="slider__img" src="./images/isol.jpg" alt="изображение слайдера">
                 <div class="slider__text-like">
                   <h4 class="news-card__title">Режим изоляции продлен</h4>
@@ -165,7 +163,7 @@
                 </blockquote>
               </div>
 
-              <div class="slider__item">
+              <div class="slider__item news-card">
                 <img class="slider__img" src="./images/spaseX.jpg" alt="изображение слайдера">
                 <div class="slider__text-like">
                   <h4 class="news-card__title">Компания SpaceX начала колонизацию Марса</h4>
@@ -186,7 +184,7 @@
                   <cite class="slider__author">«Был поздний час». Иван Бунин (1901)</cite>
                 </blockquote>
               </div>
-              <div class="slider__item">
+              <div class="slider__item news-card">
                 <img class="slider__img" src="./images/mask.jpg" alt="изображение слайдера">
                 <div class="slider__text-like">
                   <h4 class="news-card__title">Последствия пандемии 2024</h4>
@@ -212,7 +210,7 @@
                   <cite class="slider__author">«Холера». Владимир Высоцкий (1970)</cite>
                 </blockquote>
               </div>
-              <div class="slider__item">
+              <div class="slider__item news-card">
                 <img class="slider__img" src="./images/mayakovkiy.jpg" alt="изображение слайдера">
                 <div class="slider__text-like">
                   <h4 class="news-card__title">Смонтированы новые водостоки в Москве</h4>
@@ -342,12 +340,12 @@
           <p class="quiz__subtitle">подтвердите, что вы не робот</p>
         </div>
         <div class="quiz__head">
-          <div class="head__content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она завоет, То
+          <div class="quiz__head-content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она завоет, То
             заплачет, как дитя...</div>
         </div>
         <div class="quiz__body">
-          <div class="buttons">
-            <div class="buttons__content" id="buttons">
+          <div class="quiz__buttons">
+            <div class="quiz__buttons-content" id="buttons">
               <button class="button">Default button</button><br>
               <button class="button button_wrong">Wrong answer</button><br>
               <button class="button button_correct">Correct answer</button><br>
@@ -377,7 +375,7 @@
           <h2 class="popup__subtitle">Ваше обращение успешно отправлено!</h2>
           <p class="popup__title popup__title_type_send-form">Срок рассмотрения - до 5 рабочих дней</p>
           <a href="javascript:window.print ()" class="popup__link-print"><button
-              class="popup__send-btn popup__send-btn-print">Напечатать копию</button></a>
+              class="popup__send-btn popup__send-btn-print">Сохранить копию</button></a>
           <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
         </div>
 

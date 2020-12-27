@@ -1,0 +1,14 @@
+.page {
+  background: #E5E5E5;
+  color: #000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: normal;
+  max-width: 1600px;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+}
+

@@ -1,4 +1,8 @@
 import FormValidator from '../components/FormValidator.js';
+import Quiz from '../components/quiz/Quiz.js';
+import Question from '../components/quiz/Question.js';
+import Answer from '../components/quiz/Answer.js';
+import { multiItemSlider } from '../components/slider.js';
 import {
   poems,
   validationObject,
@@ -13,63 +17,19 @@ import {
   newsCardLike,
   quizPopup,
   popupSubmitForm,
-  inputList
+  inputList,
+  popupQuizError
 } from './constants.js';
 
 
-//Класс, который представляет сам тест
-class Quiz {
-  constructor(questions, onSuccess = null) {
-    //Массив с вопросами
-    this.questions = questions;
-
-    //Номер текущего вопроса
-    this.current = 0;
-
-    this.onSuccess = onSuccess;
-  }
-
-  checkAnswer(index) {
-    return this.questions[this.current].answers[index].value == 1;
-  }
-
-  getQuestion() {
-    const id = parseInt(Math.random() * this.questions.length);
-    this.current = id;
-    return this.questions[id];
-  }
-  result(func) {
-    this.onSuccess = func;
-  }
-}
-
-//Класс, представляющий вопрос
-class Question {
-  constructor(text, answers) {
-    this.text = text;
-    this.answers = answers;
-  }
-
-  Click(index) {
-    return this.answers[index].value;
-  }
-}
-
-//Класс, представляющий ответ
-class Answer {
-  constructor(text, value) {
-    this.text = text;
-    this.value = value;
-  }
-}
-
-
-const PopupQuizError = document.querySelector('.popup_quiz-error')
+// --- ДЕЙСТВИЯ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ  ---
+const validFormPopupUser = new FormValidator(validationObject, ".popup_type_form");
+validFormPopupUser.enableValidation();
 
 
 // --- ФУНКЦИИ ---
 function openPopup(typePopup) {
-  typePopup.classList.add("popup_opened");
+  typePopup.classList.add("popup_opened"); 
 }
 
 function closePopup(typePopup) {
@@ -123,15 +83,7 @@ function handlePopupSubmit(evt) {
 
   Update();
   quiz.result(() => openPopup(popupWithBlank));
-  openQuiz();
-}
-
-function openQuiz(onResult) {
-  quizPopup.classList.add("popup__quiz_opened");
-}
-
-function closeQuiz() {
-  quizPopup.classList.remove("popup__quiz_opened");
+  openPopup(quizPopup);
 }
 
 function handleLikeClick(likeBtn) {
@@ -174,15 +126,13 @@ function Update() {
 function Click(index) {
   //Получаем номер правильного ответа
   let correct = quiz.checkAnswer(index);
-  closeQuiz();
+  closePopup(quizPopup);
   if (correct) {
-    quiz.onSuccess();
+    quiz.onSuccess(); //если успешно, переход на форму бланка
   } else {
-    openPopup(PopupQuizError)
+    openPopup(popupQuizError) //иначе открыть попап с ошибкой
   }
 }
-
-
 
 // --- ОБРАБОТЧИКИ СОБЫТИЙ ---
 //собираем все категории услуг
@@ -204,7 +154,7 @@ document.querySelectorAll(".popup__close").forEach((element) => {
 //обработчики клика по оверлею
 popupWithForm.addEventListener("mousedown", handlePopupClick);
 popupWithBlank.addEventListener("mousedown", handlePopupClick);
-PopupQuizError.addEventListener("mousedown", handlePopupClick);
+popupQuizError.addEventListener("mousedown", handlePopupClick);
 popupSubmitForm.addEventListener("mousedown", handlePopupClick);
 
 //обработчик отправки формы
@@ -222,12 +172,7 @@ newsCardLike.forEach((element) => {
   });
 });
 
-
-// --- ДЕЙСТВИЯ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ  ---
-const validFormPopupUser = new FormValidator(validationObject, ".popup_type_form");
-validFormPopupUser.enableValidation();
-
-
+// объект со стихами
 const questions = [
   new Question(
     `Буря мглою небо кроет,
@@ -307,5 +252,5 @@ const questions = [
   ),
 ];
 
-
 const quiz = new Quiz(questions);
+

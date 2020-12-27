@@ -1,0 +1,13 @@
+.footer__text {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #E5E5E5;
+}
+
+.footer__text:hover {
+  color: #FF8811;
+}

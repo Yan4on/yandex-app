@@ -1,0 +1,24 @@
+.popup__submit-btn {
+  width: 350px;
+  height: 68px;
+  background-color: #FF8811;
+  color: #fff;
+  grid-column: 1/3;
+  justify-self: center;
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  transition: color .4s linear;
+}
+
+.popup__submit-btn:hover {
+  cursor: pointer;
+  color: #095256;
+}
+
+.popup__submit-btn:focus {
+  outline: none;
+  color: #095256;
+}

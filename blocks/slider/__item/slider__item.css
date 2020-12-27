@@ -1,0 +1,9 @@
+.slider__item {
+  position: relative;
+  border-right: 10px solid #ffffff;
+  border-left: 10px solid #ffffff;
+  flex: 0 0 50%;
+  background-color: #E6E6E6;
+  max-width: 530px;
+  padding: 0 0 1%;
+}

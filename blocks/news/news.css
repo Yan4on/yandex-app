@@ -1,0 +1,17 @@
+.news {
+  padding: 8px 0 70px;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+
+.news::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 19%;
+  height: 52px;
+  background-color: #FF8811;
+  z-index: 0;
+}

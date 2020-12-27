@@ -1,0 +1,7 @@
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control_right::before {
+  background-image: url("../../../../images/right-arrow.png");
+}

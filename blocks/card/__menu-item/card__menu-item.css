@@ -1,0 +1,11 @@
+.card__menu-item {
+  font-weight: normal;
+  margin: 0 0 10px;
+  transition: transform .1s ease-in;
+}
+
+.card__menu-item:hover {
+  cursor: pointer;
+  color: #FF8811;
+  transform: scale(1, 1.2);
+}

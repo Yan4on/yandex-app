@@ -1,0 +1,5 @@
+.quiz__head {
+  justify-content: center;
+  display: flex;
+  text-align: start;
+}

@@ -31,3 +31,9 @@
 **Figma:** [Ссылка на макет в Figma](https://www.figma.com/file/qvEfFmZtHhvyCap5O2UbKu/Яндекс_Хакатон?node-id=0%3A1)
 
 **Итоговый вид страницы:** [Ссылка на страницу проекта](https://yan4on.github.io/yandex-app/index.html)
+
+© Анна Костромина
+
+© Янис Широких
+
+© Александра Шевченко

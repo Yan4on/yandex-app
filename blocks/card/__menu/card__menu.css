@@ -8,3 +8,33 @@
   box-sizing: border-box;
   flex-shrink: 1;
 }
+
+@media screen and (max-width: 1025px) {
+  .card__menu {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card__menu{
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .card__menu{
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .card__menu{
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

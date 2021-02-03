@@ -5,3 +5,9 @@
   margin: 0;
   text-align: center;
 }
+
+@media screen and (max-width: 1025px) {
+  .popup__subtitle {
+    font-size: 26px;
+  }
+}

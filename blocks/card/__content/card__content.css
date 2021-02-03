@@ -11,3 +11,10 @@
   padding: 30px 20px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 450px) {
+  .card__content{
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+}

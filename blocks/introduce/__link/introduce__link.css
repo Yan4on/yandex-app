@@ -22,3 +22,10 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 460px) {
+  .introduce__link{
+    width: 240px;
+    height: 52px;
+  }
+}
+

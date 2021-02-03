@@ -6,3 +6,9 @@
   row-gap: 30px;
   padding: 0;
 }
+
+@media screen and (max-width: 1025px) {
+  .popup__form {
+    row-gap: 20px;
+  }
+}

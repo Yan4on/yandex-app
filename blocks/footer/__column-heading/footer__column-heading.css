@@ -4,3 +4,9 @@
   color: #FF8811;
 }
 
+@media screen and (max-width: 770px) {
+  .footer__column-heading {
+    margin: 20px 0 6px;
+  }
+
+}

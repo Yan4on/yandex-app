@@ -7,3 +7,18 @@
   z-index: 2;
   position: relative;
 }
+
+
+@media screen and (max-width: 850px) {
+  .introduce__subtitle{
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .introduce__subtitle{
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

@@ -29,3 +29,14 @@
 .header__menu-item:last-of-type {
   margin: 0;
 }
+
+
+@media screen and (max-width: 850px) {
+  .header__menu-item::after {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    border-bottom: 1px solid #fff;
+  }
+
+}

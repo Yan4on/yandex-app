@@ -23,3 +23,11 @@
   outline: none;
   color: #095256;
 }
+
+@media screen and (max-width: 1025px) {
+  .popup__send-btn {
+    font-size: 18px;
+    line-height: 20px;
+    height: 52px;
+  }
+}

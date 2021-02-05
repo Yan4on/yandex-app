@@ -9,3 +9,9 @@
   color: #FF8811;
   transform: scale(1, 1.2);
 }
+
+@media screen and (max-width: 1025px) {
+  .card__menu-item {
+    margin: 0 0 18px;
+  }
+}

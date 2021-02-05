@@ -3,3 +3,10 @@
   line-height: 22px;
   margin: 0;
 }
+
+@media screen and (max-width: 1025px) {
+  .quiz__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

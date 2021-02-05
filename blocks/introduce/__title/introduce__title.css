@@ -9,3 +9,17 @@
   position: relative;
   z-index: 2;
 }
+
+@media screen and (max-width: 850px) {
+  .introduce__title {
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .introduce__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}

@@ -1,5 +1,5 @@
 .news {
-  padding: 8px 0 70px;
+  padding: 8px 0px 70px;
   position: relative;
   width: 100%;
   background-color: #fff;
@@ -14,4 +14,11 @@
   height: 52px;
   background-color: #FF8811;
   z-index: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .news {
+    padding: 8px 30px 70px;
+    box-sizing: border-box;
+  }
 }

@@ -1,3 +1,10 @@
 .quiz__container {
   padding: 50px 60px 30px;
 }
+
+
+@media screen and (max-width: 1025px) {
+  .quiz__container {
+    padding: 40px 40px 30px;
+  }
+}

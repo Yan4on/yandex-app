@@ -7,3 +7,9 @@
   height: 240px;
   display: flex;
 }
+
+@media screen and (max-width: 450px) {
+  .card{
+    height: 400px;
+  }
+}

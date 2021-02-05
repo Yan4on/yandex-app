@@ -22,3 +22,11 @@
   outline: none;
   color: #095256;
 }
+
+
+@media screen and (max-width: 1025px) {
+  .popup__submit-btn {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

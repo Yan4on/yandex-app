@@ -15,7 +15,7 @@
   background-color: #FF8811;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 8;
 }
 
 @media screen and (max-width: 450px) {

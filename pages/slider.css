@@ -9,6 +9,7 @@
 
     /* стили основного контейнера слайдера */
     .slider {
+      z-index: 5;
       position: relative;
       overflow: hidden;
       max-width: 100%;
@@ -16,9 +17,6 @@
       margin-right: auto;
     }
 
-    /* .slider__text {
-      font-size: small;
-    } */
 
     @media screen and (max-width: 767px) {
       .slider__text{

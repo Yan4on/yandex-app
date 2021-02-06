@@ -5,3 +5,10 @@
   font-weight: normal;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 750px) {
+  .quiz__head-content {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

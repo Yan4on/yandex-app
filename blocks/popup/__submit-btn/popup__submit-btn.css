@@ -30,3 +30,15 @@
     line-height: 24px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .popup__submit-btn {
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .popup__submit-btn {
+    width: 100%;
+  }
+}

@@ -26,3 +26,10 @@
     height: 30px;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .popup__close{
+    width: 20px;
+    height: 20px;
+  }
+}

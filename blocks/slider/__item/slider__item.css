@@ -8,7 +8,9 @@
   padding: 0 0 1%;
   flex: 0 0 100%;
   max-width: 675px;
+
 }
+
 
 @media screen and (max-width: 768px) {
   .slider__item {

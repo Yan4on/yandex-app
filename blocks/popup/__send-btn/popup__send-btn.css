@@ -31,3 +31,10 @@
     height: 52px;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .popup__send-btn{
+    line-height: 18px;
+  }
+}
+

@@ -37,7 +37,7 @@
 @import url(../blocks/news-card/__title/news-card__title.css);
 @import url(../blocks/news-card/__like/news-card__like.css);
 
-@import url(../blocks/slider/slider.css);
+/* @import url(../blocks/slider/slider.css);
 @import url(../blocks/slider/__wrapper/slider__wrapper.css);
 @import url(../blocks/slider/__item/slider__item.css);
 @import url(../blocks/slider/__img/slider__img.css);
@@ -45,7 +45,7 @@
 @import url(../blocks/slider/__control/slider__control.css);
 @import url(../blocks/slider/__control/_left/slider__control_left.css);
 @import url(../blocks/slider/__control/_right/slider__control_right.css);
-@import url(../blocks/slider/__author/slider__author.css);
+@import url(../blocks/slider/__author/slider__author.css); */
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);

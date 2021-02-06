@@ -1,10 +1,11 @@
 .popup__text {
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 16px;
 }
 
-@media screen and (max-width: 1025px) {
-  .popup__title {
+
+@media screen and (max-width: 460px) {
+  .popup__text{
     font-size: 14px;
     line-height: 16px;
   }

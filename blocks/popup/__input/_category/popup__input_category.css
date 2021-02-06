@@ -4,3 +4,12 @@
   border: 3px solid #FF8811;
   background-color: #fff;
 }
+
+@media screen and (max-width: 750px) {
+  .popup__input_category {
+    font-size: 18px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

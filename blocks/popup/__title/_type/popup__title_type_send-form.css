@@ -12,3 +12,9 @@
     font-size: 22px;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .popup__title_type_send-form {
+    font-size: 18px;
+  }
+}

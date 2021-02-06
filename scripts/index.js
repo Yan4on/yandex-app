@@ -2,7 +2,7 @@ import FormValidator from '../components/FormValidator.js';
 import Quiz from '../components/quiz/Quiz.js';
 import Question from '../components/quiz/Question.js';
 import Answer from '../components/quiz/Answer.js';
-import { multiItemSlider } from '../components/slider.js';
+// import { multiItemSlider } from '../components/slider.js';
 import {
   poems,
   validationObject,
@@ -29,7 +29,7 @@ validFormPopupUser.enableValidation();
 
 // --- ФУНКЦИИ ---
 function openPopup(typePopup) {
-  typePopup.classList.add("popup_opened"); 
+  typePopup.classList.add("popup_opened");
 }
 
 function closePopup(typePopup) {

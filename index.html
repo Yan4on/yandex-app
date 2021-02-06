@@ -9,6 +9,7 @@
   <link rel="icon" href="./images/favicon.gif" type="image/gif" />
   <link rel="stylesheet" href="pages/index.css" />
   <link rel="stylesheet" href="pages/print.css" />
+  <link rel="stylesheet" href="./slider.css" />
 </head>
 
 <body>
@@ -115,7 +116,7 @@
 
 
       <section class="news">
-        <div class="slider page__max">
+        <!-- <div class="slider page__max">
           <h2 class="news__title" id="news">Новости</h2>
           <div class="slider">
             <div class="slider__wrapper">
@@ -237,7 +238,92 @@
             <a class="slider__control slider__control_left" href="#" role="button"></a>
             <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
           </div>
+        </div> -->
+
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item slider__item_1">
+                <div class="slider__item_inner">
+                  <!-- <span class="slider__item_img"> -->
+                    <img class="slider__item_photo" src="./images/russia.png" alt="">
+                  <!-- </span> -->
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">Россия создала вакцину против covid-19</span>
+
+                    <span class="slider__item_text">
+                      <p class="slider__text"> Прививку от «жизни весёлой<br>
+                        Поставят деревни и сёла.<br>
+                        И города тоже рады,<br>
+                        Выходит народ на парады.<br>
+                        </p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="slider__item slider__item_2">
+                <div class="slider__item_inner">
+                  <!-- <span class="slider__item_img"> -->
+                    <img class="slider__item_photo" src="https://highxtar.com/wp-content/uploads/2020/05/highxtar-spacex-elon-musk-occupy-mars2.jpg" alt="">
+                  <!-- </span> -->
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">Space-X запустила ракету...</span>
+
+                    <span class="slider__item_text">
+                      <p class="slider__text">
+                        Я сразу смазал карту будня,<br>
+                        плеснувши краску из стакана;<br>
+                        я показал на блюде студня<br>
+                        косые скулы океана.<br>
+                        На чешуе жестяной рыбы<br>
+                        прочёл я зовы новых губ.<br>
+                    <br></p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="slider__item slider__item_3">
+                <div class="slider__item_inner">
+                  <!-- <span class="slider__item_img"> -->
+                    <img class="slider__item_photo" src="https://www.spets.ru/upload/iblock/108/maska_dlya_litsa_spanbond_3_kh_sloynaya_kitay.jpg" alt="">
+                  <!-- </span> -->
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">Последствия пандемии</span>
+
+                    <span class="slider__item_text">
+                      <p class="slider__text"> Не покупают никакой еды -<br>
+                        Все экономят вынужденно деньги:<br>
+                        Холера косит стройные ряды, -<br>
+                        Но люди вновь смыкаются в шеренги.<br></p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="slider__item slider__item_4">
+                <div class="slider__item_inner">
+                  <!-- <span class="slider__item_img"> -->
+                    <img class="slider__item_photo" src="https://www.515287.ru/upload/iblock/491/491c611a5e39b57c52846ad6e93c2379.jpg" alt="">
+                  <!-- </span> -->
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">На борьбу со снегопадом выведена вся дорожная техника</span>
+
+                    <span class="slider__item_text">
+                      <p class="slider__text"> Опять он падает, чудесно молчаливый,<br>
+                        Легко колеблется и опускается...<br>
+                        Как сердцу сладостен полет его счастливый!<br>
+                        Несуществующий, он вновь рождается...<br>
+                        </p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="slider__control slider__control_prev" href="#" role="button"></a>
+          <a class="slider__control slider__control_next" href="#" role="button"></a>
         </div>
+
+
       </section>
 
       <div class="quiz__error" id="one"></div>
@@ -387,6 +473,8 @@
 
   </div>
   <script type="module" src="scripts/index.js"></script>
+  <script src="./components/slider.js"></script>
 </body>
 
 </html>
+

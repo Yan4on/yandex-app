@@ -1,0 +1,26 @@
+.news {
+  padding: 50px 30px 50px;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* .news::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 19%;
+  height: 52px;
+  background-color: rgba(9, 82, 86, 0.82);
+  z-index: 0;
+} */
+
+
+
+@media screen and (max-width: 505px) {
+  .news {
+    padding: 20px 20px 10px;
+  }
+}

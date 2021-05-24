@@ -1,0 +1,21 @@
+.popup__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr .6fr .6fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 0;
+}
+
+@media screen and (max-width: 1025px) {
+  .popup__form {
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popup__form {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-auto-flow: row;
+  }
+}

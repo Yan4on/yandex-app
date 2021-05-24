@@ -1,0 +1,12 @@
+.quiz__title {
+  font-size: 28px;
+}
+
+
+
+@media screen and (max-width: 1025px) {
+  .quiz__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

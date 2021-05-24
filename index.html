@@ -1,11 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Гражданин-поэт 2025</title>
+  <meta name="description" content="Хакатон «2025: Гражданин-поэт»" />
+  <link rel="icon" href="./images/favicon.gif" type="image/gif" />
+  <link rel="stylesheet" href="pages/index.css" />
+  <link rel="stylesheet" href="pages/print.css" />
+  <link rel="stylesheet" href="pages/slider.css" />
 </head>
+
 <body>
-    
+  <div class="page">
+    <header class="header">
+      <div class="header__box page__max">
+        <div class="logo logo_place_header">
+          <p class="logo__text">Гражданин.Поэт</p>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#services" class="header__link">Услуги</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#news" class="header__link">Новости</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#footer" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="introduce">
+        <h1 class="introduce__title">Сделай свою жизнь лучше, просто оставь заявку!</h1>
+        <p class="introduce__subtitle">Проект призван помочь гражданам обратиться в госучереждения в установленной
+          Российской Федерацией стихотворной форме</p>
+        <a class="introduce__link" href="#services">
+          <p class="introduce__link-text">Выбрать услугу</p>
+        </a>
+      </section>
+
+      <section class="services page__max" id="services">
+        <div class="card">
+          <h2 class="card__title">Медицина</h2>
+          <div class="card__content">
+            <img src="./images/medicine.svg" alt="Медицинские услуги" class="card__pic">
+            <ul class="card__menu">
+              <li class="card__menu-item">Оформление робота-помощника</li>
+              <li class="card__menu-item">Изготовление экзоскелета</li>
+              <li class="card__menu-item">3D-печать органа</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Образование</h2>
+          <div class="card__content">
+            <img src="./images/knowledg.svg" alt="Образование" class="card__pic">
+            <ul class="card__menu">
+              <li class="card__menu-item">Результаты ЕГЭ-2025</li>
+              <li class="card__menu-item">Поступление в ВУЗ</li>
+              <li class="card__menu-item">Запись в онлайн школу</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card__title">ЖКХ</h2>
+          <div class="card__content">
+            <img src="./images/undraw_wind_turbine_x2k4.svg" alt="ЖКХ" class="card__pic">
+            <ul class="card__menu">
+              <li class="card__menu-item">Неисправность ветрогенератора</li>
+              <li class="card__menu-item">Установка солнечных батарей</li>
+              <li class="card__menu-item">Подключение к Li-Fi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Транспорт</h2>
+          <div class="card__content">
+            <img src="./images/undraw_order_ride_xjs4.svg" alt="Транспорт" class="card__pic">
+            <ul class="card__menu">
+              <li class="card__menu-item">Аварийное состояние дорожного полотна</li>
+              <li class="card__menu-item">Нарушение ПДД беспилотным авто</li>
+              <li class="card__menu-item">Протокол ДТП с беспилотным авто</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Документы</h2>
+          <div class="card__content">
+            <img src="./images/documents.svg" alt="Документы" class="card__pic">
+            <ul class="card__menu">
+              <li class="card__menu-item">Биометрический паспорт</li>
+              <li class="card__menu-item">Получение разрешения на выезд заграницу</li>
+              <li class="card__menu-item">Оформление гражданства</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Налоги</h2>
+          <div class="card__content">
+            <img src="./images/online-payments.svg" alt="Налоги" class="card__pic">
+            <ul class="card__menu">
+              <li class="card__menu-item">Подача налоговой декларации</li>
+              <li class="card__menu-item">Нарушение уплаты налогов</li>
+              <li class="card__menu-item">Банкротство физического лица</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="news">
+        <div class="slider page__max">
+          <h2 class="news__title" id="news">Новости</h2>
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item slider__item_1">
+                <div class="slider__item_inner">
+                    <img class="slider__item_photo" src="./images/russia.png" alt="">
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">Россия создала вакцину против covid-19</span>
+                    <span class="slider__item_text">
+                      <p class="slider__text"> Прививку от «жизни весёлой<br>
+                        Поставят деревни и сёла.<br>
+                        И города тоже рады,<br>
+                        Выходит народ на парады.<br>
+                        </p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="slider__item slider__item_2">
+                <div class="slider__item_inner">
+                    <img class="slider__item_photo" src="./images/spaseX.jpg" alt="">
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">Space-X запустила ракету...</span>
+
+                    <span class="slider__item_text">
+                      <p class="slider__text">
+                        Я сразу смазал карту будня,<br>
+                        плеснувши краску из стакана;<br>
+                        я показал на блюде студня<br>
+                        косые скулы океана.<br>
+                        На чешуе жестяной рыбы<br>
+                        прочёл я зовы новых губ.<br>
+                    <br></p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="slider__item slider__item_3">
+                <div class="slider__item_inner">
+                    <img class="slider__item_photo" src="https://www.spets.ru/upload/iblock/108/maska_dlya_litsa_spanbond_3_kh_sloynaya_kitay.jpg" alt="">
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">Последствия пандемии</span>
+
+                    <span class="slider__item_text">
+                      <p class="slider__text"> Не покупают никакой еды -<br>
+                        Все экономят вынужденно деньги:<br>
+                        Холера косит стройные ряды, -<br>
+                        Но люди вновь смыкаются в шеренги.<br></p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="slider__item slider__item_4">
+                <div class="slider__item_inner">
+                  <!-- <span class="slider__item_img"> -->
+                    <img class="slider__item_photo" src="https://www.515287.ru/upload/iblock/491/491c611a5e39b57c52846ad6e93c2379.jpg" alt="">
+                  <!-- </span> -->
+                  <span class="slider__item_testimonial">
+                    <span class="slider__item_name">На борьбу со снегопадом выведена вся дорожная техника</span>
+
+                    <span class="slider__item_text">
+                      <p class="slider__text"> Опять он падает, чудесно молчаливый,<br>
+                        Легко колеблется и опускается...<br>
+                        Как сердцу сладостен полет его счастливый!<br>
+                        Несуществующий, он вновь рождается...<br>
+                        </p>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="slider__control slider__control_prev" href="#" role="button"></a>
+          <a class="slider__control slider__control_next" href="#" role="button"></a>
+        </div>
+        </div>
+
+      </section>
+
+      <div class="quiz__error" id="one"></div>
+    </main>
+
+    <footer class="footer" id='footer'>
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_copyright">
+          <div class="logo logo_place_footer">
+            <p class="logo__text logo__text_place_footer">Гражданин.Поэт</p>
+          </div>
+          <div class="footer__author-box">
+            <p class="footer__author"> &copy; Анна Костромина</p>
+            <p class="footer__author"> &copy; Янис Широких</p>
+            <p class="footer__author"> &copy; Александра Шевченко</p>
+            <p class="footer__author">2020</p>
+          </div>
+
+        </div>
+        <nav class="footer__column footer__column_content_info">
+          <h4 class="footer__column-heading">О Проекте</h4>
+          <ul class="footer__column-links">
+            <li><a class="footer__text" href="https://github.com/Yan4on/yandex-app/blob/dev/README.md"
+                target="_blank">Описание</a></li>
+            <li><a class="footer__text" href="https://www.notion.so/2025-c8543acca3bb411c88734a322cd3de0f"
+                target="_blank">Задача</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column footer__column_content_social">
+          <h4 class="footer__column-heading">Контакты</h4>
+          <ul class="footer__column-links">
+            <li><a class="footer__text" href="#" target="_blank">
+                <img class="footer__social-icon" src="./images/facebook-app-logo.svg" alt="Facebook">Facebook</a></li>
+            <li><a class="footer__text" href="#" target="_blank">
+                <img class="footer__social-icon" src="./images/vk-reproductor.svg" alt="Вконтакте">ВКонтакте </a></li>
+            <li><a class="footer__text" href="#" target="_blank">
+                <img class="footer__social-icon" src="./images/instagram.svg" alt="Instagram">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <section class="popup popup_type_form">
+      <div class="popup__container">
+        <h3 class="popup__title">Заполните форму</h3>
+        <form class="popup__form" name="popupFormCard">
+          <div class="popup__grid">
+            <input id="surname" type="text" placeholder="Фамилия" class="popup__input popup__input_surname"
+              name="popupSurname" minlength="2" maxlength="30" required autofocus>
+            <span id="surname-error" class="popup__input-error"></span>
+          </div>
+          <div class="popup__grid">
+            <input id="name" type="text" placeholder="Имя" class="popup__input popup__input_name" name="popupName"
+              required minlength="2" maxlength="30">
+            <span id="name-error" class="popup__input-error"></span>
+          </div>
+          <div class="popup__grid">
+            <input id="mail" type="email" placeholder="e-mail" class="popup__input popup__input_email" name="popupEmail"
+              required>
+            <span id="mail-error" class="popup__input-error"></span>
+          </div>
+          <div class="popup__grid">
+            <input id="tel" type="tel" placeholder="Tелефон" class="popup__input popup__input_tel" name="popupTel"
+              required pattern="(\+7|8)((\s\(\d{3}\)\s)|(\(\d{3}\))|(\s|-)?\d{3}(\s|-)?)\d{3}-?\d{2}-?\d{2}">
+            <span id="tel-error" class="popup__input-error"></span>
+          </div>
+          <div class="popup__grid popup__grid_type_category">
+            <input id="category" type="text" placeholder="Категория" class="popup__input popup__input_category"
+              name="popupCategory" minlength="2" maxlength="50" required readonly>
+            <span id="category-error" class="popup__input-error"></span>
+          </div>
+          <button class="popup__submit-btn" type="submit">Создать заявку</button>
+        </form>
+        <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
+      </div>
+    </section>
+
+    <section class="popup popup_type_blank">
+      <div class="popup__container popup__container_type_message">
+        <img class="popup__print" src="././images/russia.png" alt="печать">
+        <div class="popup__header">
+          <p class="popup__field popup__name"></p>
+          <p class="popup__field popup__email"></p>
+          <p class="popup__field popup__tel"></p>
+          <p class="popup__field popup__category"></p>
+        </div>
+        <div class="popup__content">
+          <h2 class="popup__title popup__title_type_message">Заявление</h2>
+          <p class="popup__text"></p>
+        </div>
+        <div class="popup__btn-wrapper">
+          <button class="popup__send-btn" type="submit">Отправить</button>
+        </div>
+        <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
+      </div>
+    </section>
+
+    <section class="popup popup__quiz">
+      <div class="popup__container quiz__container">
+        <div class="popup__title quiz__title">
+          <h3 class="quiz__title_posishen">Укажите автора стихотворения, чтобы продолжить:</h3>
+          <p class="quiz__subtitle">подтвердите, что вы не робот</p>
+        </div>
+        <div class="quiz__head">
+          <div class="quiz__head-content" id="head">Буря мглою небо кроет, Вихри снежные крутя. То, как зверь, она
+            завоет, То
+            заплачет, как дитя...</div>
+        </div>
+        <div class="quiz__body">
+          <div class="quiz__buttons">
+            <div class="quiz__buttons-content" id="buttons">
+              <button class="button">Default button</button><br>
+              <button class="button button_wrong">Wrong answer</button><br>
+              <button class="button button_correct">Correct answer</button><br>
+              <button class="button button_passive">Unclicked button</button><br>
+            </div>
+          </div>
+          <div class="quiz__error" id="error"></div>
+        </div>
+    </section>
+
+    <section class="popup popup_quiz-error">
+      <div class="popup__container popup__container_quiz-error">
+        <div class="popup__content">
+          <img src="./images/undraw_settings_tab_mgiw.svg" alt="Изображение выбора ответа" class="popup__pic">
+          <h2 class="popup__title popup__title_type_message">Увы, ответ не верный</h2>
+          <p class="popup__subtitle">Попробуйте еще раз!</p>
+        </div>
+        <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
+      </div>
+    </section>
+
+    <section class="popup popup_submit-form">
+      <div class="popup__container popup__container_submit-form">
+        <div class="popup__content popup__content_type_send-form">
+          <img src="./images/undraw_Mail_sent_re_0ofv.svg" alt="Изображение выбора ответа"
+            class="popup__pic popup__pic_type_send-form">
+          <h2 class="popup__subtitle">Ваше обращение успешно отправлено!</h2>
+          <p class="popup__title popup__title_type_send-form">Срок рассмотрения - до 5 рабочих дней</p>
+          <a href="javascript:window.print ()" class="popup__link-print"><button
+              class="popup__send-btn popup__send-btn-print">Сохранить копию</button></a>
+          <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
+        </div>
+        <button class="popup__close" type="button" aria-label="Закрыть окно"></button>
+      </div>
+    </section>
+
+  </div>
+  <script type="module" src="scripts/index.js"></script>
+  <script src="./components/slider.js"></script>
 </body>
+
 </html>
+

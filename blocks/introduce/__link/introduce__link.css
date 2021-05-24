@@ -1,0 +1,31 @@
+.introduce__link {
+  display: flex;
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 60px;
+  background-color: #FF8811;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+  position: relative;
+  transition: color .4s linear;
+  overflow: hidden;
+  border: none;
+}
+
+.introduce__link:hover {
+  color: #095256;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 460px) {
+  .introduce__link{
+    width: 240px;
+    height: 52px;
+  }
+}
+

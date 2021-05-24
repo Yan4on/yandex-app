@@ -1,0 +1,5 @@
+.slider__img {
+  object-fit: cover;
+  height: 272px;
+  width: 100%;
+}

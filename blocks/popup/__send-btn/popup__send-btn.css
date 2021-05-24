@@ -1,0 +1,40 @@
+.popup__send-btn {
+  width: 250px;
+  height: 60px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FF8811;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  transition: color .4s linear;
+}
+
+.popup__send-btn:hover {
+  cursor: pointer;
+  color: #095256;
+}
+
+.popup__send-btn:focus {
+  outline: none;
+  color: #095256;
+}
+
+@media screen and (max-width: 1025px) {
+  .popup__send-btn {
+    font-size: 18px;
+    line-height: 20px;
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .popup__send-btn{
+    line-height: 18px;
+  }
+}
+

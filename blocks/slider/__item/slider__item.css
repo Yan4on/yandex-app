@@ -1,0 +1,21 @@
+.slider__item {
+  position: relative;
+  border-right: 10px solid #ffffff;
+  border-left: 10px solid #ffffff;
+  /* flex: 0 0 50%; */
+  background-color: #E6E6E6;
+  /* max-width: 530px; */
+  padding: 0 0 1%;
+  flex: 0 0 100%;
+  max-width: 675px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 675px;
+  }
+}
+

@@ -1,0 +1,15 @@
+.introduce__link-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width: 460px) {
+  .introduce__link-text{
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

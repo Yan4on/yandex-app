@@ -1,0 +1,25 @@
+.footer {
+  padding: 0 30px 40px;
+  height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: #095256;
+  color: #E5E5E5;
+}
+
+
+@media screen and (max-width: 770px) {
+  .footer {
+    height: 100%;
+    padding: 0 30px 90px;
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer{
+    padding: 0 20px 90px;
+  }
+}
+

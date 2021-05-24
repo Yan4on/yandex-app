@@ -1,0 +1,57 @@
+@media print {
+	html, body, .popup__container{
+		height: 100vh;
+		width: 100vw;
+	}
+}
+
+@media print {
+	*, *:before, *:after { 
+		color: #000;
+		box-shadow: none;
+        text-shadow: none;
+	}
+}
+
+@media print {
+	html, body {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+}
+/* Скрытие лишних элементов */
+@media print {
+	.body,.content, .main, .header, .footer, .banner, .popup__send-btn, .action-print, .popup {
+		display: none;
+	}
+}
+
+@media print {
+	.popup_type_blank {
+	visibility: visible;
+    opacity: 1;
+	display: flex;
+	}
+}
+
+/* @media print {
+	.noprint {
+		display: none;
+	}
+} */
+
+@media print {
+	.wrapper {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+}

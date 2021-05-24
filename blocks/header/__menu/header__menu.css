@@ -1,0 +1,12 @@
+.header__menu {
+  min-width: 30%;
+}
+
+@media screen and (max-width: 850px) {
+  .header__menu {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    min-width: auto;
+  }
+}

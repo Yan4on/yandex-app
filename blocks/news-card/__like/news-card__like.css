@@ -1,0 +1,27 @@
+.news-card__like {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  background-image: url(../../../images/like.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 28px;
+  min-height: 28px;
+  object-fit: cover;
+  position: absolute;
+  top: 93%;
+  right: 7%;
+  margin-left: 10px;
+  z-index: 4;
+  transition: transform .3s ease-in;
+}
+
+.news-card__like_active {
+  background-image: url(../../../images/like-active.svg);
+}
+
+.news-card__like:hover{
+  cursor: pointer;
+  transform: scale(1.26);
+}

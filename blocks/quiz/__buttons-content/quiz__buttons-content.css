@@ -1,0 +1,14 @@
+.quiz__buttons-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 18px;
+}
+
+@media screen and (max-width: 575px) {
+  .quiz__buttons-content {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-auto-flow: row;
+  }
+}
+

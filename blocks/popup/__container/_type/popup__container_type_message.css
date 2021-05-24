@@ -1,0 +1,34 @@
+.popup__container_type_message {
+  width: 600px;
+  height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 40px 40px;
+}
+
+@media screen and (max-width: 1025px) {
+  .popup__container_type_message {
+    height: 96vh;
+    padding: 56px 30px 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .popup__container_type_message {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popup__container_type_message{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .popup__container_type_message{
+    padding: 50px 20px 30px;
+  }
+}
